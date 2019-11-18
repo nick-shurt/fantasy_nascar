@@ -1028,6 +1028,12 @@ function show_next_race($U_Name, $P_Word, $db) {
     $res = mysqli_query($con, $getRaces);
     $race_data = mysqli_fetch_array($res);
 
+    if (mysqli_num_rows($res) == 0) {
+        $getLastRace = "SELECT * FROM races WHERE number = 36 LIMIT 1";
+        $res2 = mysqli_query($con, $getLastRace);
+        $race_data = mysqli_fetch_array($res2);
+    }
+
     $date = date_create($race_data[4]);
     $edt = new DateTimeZone('America/New_York');
     $date->setTimezone($edt);
