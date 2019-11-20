@@ -34,6 +34,11 @@
             width:50%;
         }
 
+        .champ_container {
+            text-align: center;
+            color: #fff;
+        }
+
         @media screen and (max-width: 767px) {
             .year_pick {
                 margin-top: 20px;
@@ -103,8 +108,14 @@
             <div id="tab1" class="tab-pane fade in active">
                 <div class="row top_margin">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <h1 style="color: #fff;text-align: center;">Next Race:</h1>
-                        <?php show_next_race($U_NAME, $P_WORD, $DATABASE); ?>
+                        <h1 style="color: #fff;text-align: center;">Season's Over!</h1>
+                        <!-- <?php show_next_race($U_NAME, $P_WORD, $DATABASE); ?> -->
+                        <h2 style="color: #fff;text-align: center;">Congratulations to the 2019 Fantasy Nascar Champion:</h2>
+                        <br>
+                        <div class="champ_container">
+                            <h2>Team Nick</h2>
+                            <img src="img/champ.jpg" alt="Team Nick" style="border: 0; border-radius:50%; height: 150px; width: 155px;">
+                        </div>
                     </div>  
                 </div>  
             </div>
