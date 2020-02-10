@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link href="css/HSFM.css" rel="stylesheet">
     <link href="css/fantasy_nascar.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image" href="img/favicon.ico">
     <style type="text/css">
         .year_pick {
             margin-top: 20px;
@@ -33,7 +34,7 @@
             margin: 0 auto;
             width:50%;
         }
-
+        
         .champ_container {
             text-align: center;
             color: #fff;
@@ -113,7 +114,7 @@
                         <h2 style="color: #fff;text-align: center;">Congratulations to the 2019 Fantasy Nascar Champion:</h2>
                         <br>
                         <div class="champ_container">
-                            <h2>Team Nick</h2>
+                            <h1>Team Nick</h1>
                             <img src="img/champ.jpg" alt="Team Nick" style="border: 0; border-radius:50%; height: 150px; width: 155px;">
                         </div>
                     </div>  
@@ -172,7 +173,7 @@
                 </div>
 
                 <div class="row">
-                    <?php             
+                    <?php                    
                         $i = 1;
                         $w = ($_GET['year'] == '2017') ? 26 : 27;
                         while ($i <= $w) {
@@ -191,7 +192,7 @@
                         } else if ($_GET['year'] == '2019') {
                             get_wildcard_matchup($wildcard_teams, 28, true);
                             get_semifinal_matchups($semifinal_teams, 29, true);
-                            get_championship_matchup($championship_teams, 30, false);
+                            get_championship_matchup($championship_teams, 30, true);
                         }            
                     ?>
                 </div>
