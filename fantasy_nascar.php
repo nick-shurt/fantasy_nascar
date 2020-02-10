@@ -122,7 +122,6 @@
             </div>
             
             <div id="tab2" class="tab-pane fade">
-
                 <div class="row top_margin">
                     <div class="col-lg-2 col-lg-offset-5">
                         <select class="form-control" data-target=".my-scoreboard" id="theSelect">
