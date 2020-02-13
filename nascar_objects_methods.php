@@ -1024,12 +1024,12 @@ function show_next_race($U_Name, $P_Word, $db) {
         exit();  
     }
 
-    $getRaces = "SELECT * FROM races WHERE closed = 0 LIMIT 1";
+    $getRaces = "SELECT * FROM races_2020 WHERE closed = 0 LIMIT 1";
     $res = mysqli_query($con, $getRaces);
     $race_data = mysqli_fetch_array($res);
 
     if (mysqli_num_rows($res) == 0) {
-        $getLastRace = "SELECT * FROM races WHERE number = 36 LIMIT 1";
+        $getLastRace = "SELECT * FROM races_2020 WHERE number = 36 LIMIT 1";
         $res2 = mysqli_query($con, $getLastRace);
         $race_data = mysqli_fetch_array($res2);
     }
@@ -1065,7 +1065,7 @@ function show_next_race($U_Name, $P_Word, $db) {
 function get_current_week() {
     $f = new NumberFormatter("en", NumberFormatter::SPELLOUT);
 
-    $xml = simplexml_load_file("2019_cup_schedule.xml");
+    $xml = simplexml_load_file("2020_cup_schedule.xml");
     
     $cur_week = "";
     $found = false;
