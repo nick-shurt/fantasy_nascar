@@ -1,3 +1,6 @@
 <?php
-echo "Testing 1 2 3 Testing";
+echo "Inserting Races...";
+
+$xml=simplexml_load_file("2020_cup_schedule.xml");
+echo $xml->season->event[0]["name"];
 ?>
