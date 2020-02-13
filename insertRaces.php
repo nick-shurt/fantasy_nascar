@@ -1,4 +1,6 @@
 <?php
+include 'db_credentials.php';
+
 echo "Inserting Races...";
 echo "<br>";
 echo "<br>";
@@ -20,6 +22,7 @@ if (!mysqli_select_db($con, $db))  {
 $xml=simplexml_load_file("2020_cup_schedule.xml");
 
 $k = 1;
+$error = false;
 foreach ($xml->season->event as $event) {
     foreach ($event->race as $race) {
         if (isset($race["number"])) {
@@ -40,7 +43,6 @@ foreach ($xml->season->event as $event) {
 
             $sql = "INSERT INTO races_2020 (race_id, track, name, date, laps, distance, broadcast, prev_winner, number, closed) VALUES ";
             $sql .= "('" . $race_id . "', '" . $track . "', '" . $name . "', '" . $date . "', '" . $laps . "', '" . $distance . "', '" . $broadcast . "', '" . $prev_winner . "', '" . $number . "', '" . $closed . "')";
-            $error = false;
 
             if (mysqli_query($con, $sql)) {
                 echo "Race " . $k . " uploaded successfully!<br>";
@@ -51,6 +53,12 @@ foreach ($xml->season->event as $event) {
             $k++;
         }
     }
+}
+
+if (!$error) {
+    echo "<br>All races uploaded successfully!!";
+} else {
+    echo "<br>SHIT";
 }
 
 ?>
