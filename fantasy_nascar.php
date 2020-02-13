@@ -2,11 +2,11 @@
     if(isset($_GET['year'])) {
         $url_year = $_GET['year'];
         $num_year = (int)$url_year;
-        if($num_year < 2017 || $num_year > 2019) {
-            header("Location: /fantasy_nascar.php?year=2019");
+        if($num_year < 2017 || $num_year > 2020) {
+            header("Location: /fantasy_nascar.php?year=2020");
         } 
     } else {
-        header("Location: /fantasy_nascar.php?year=2019");
+        header("Location: /fantasy_nascar.php?year=2020");
     }      
 ?>
 <!DOCTYPE html>
@@ -84,6 +84,7 @@
             <option value="2017" <?php if($_GET['year'] == '2017') echo "selected='selected'"; ?> >2017</option>
             <option value="2018" <?php if($_GET['year'] == '2018') echo "selected='selected'"; ?> >2018</option>
             <option value="2019" <?php if($_GET['year'] == '2019') echo "selected='selected'"; ?> >2019</option>
+            <option value="2020" <?php if($_GET['year'] == '2020') echo "selected='selected'"; ?> >2020</option>
         </select>
     </div>
 
@@ -102,6 +103,10 @@
         include 'nascar_drivers_teams_2019.php';
         include 'nascar_results_2019.php';
     }
+    if($_GET['year'] == '2020') {
+        include 'nascar_drivers_teams_2020.php';
+        include 'nascar_results_2020.php';
+    }
     ?>
 
     <div class="container-fluid">
@@ -109,14 +114,8 @@
             <div id="tab1" class="tab-pane fade in active">
                 <div class="row top_margin">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <h1 style="color: #fff;text-align: center;">Season's Over!</h1>
-                        <!-- <?php show_next_race($U_NAME, $P_WORD, $DATABASE); ?> -->
-                        <h2 style="color: #fff;text-align: center;">Congratulations to the 2019 Fantasy Nascar Champion:</h2>
-                        <br>
-                        <div class="champ_container">
-                            <h1>Team Nick</h1>
-                            <img src="img/champ.jpg" alt="Team Nick" style="border: 0; border-radius:50%; height: 150px; width: 155px;">
-                        </div>
+                        <h1 style="color: #fff;text-align: center;">Next Race:</h1>
+                        <?php show_next_race($U_NAME, $P_WORD, $DATABASE); ?>
                     </div>  
                 </div>  
             </div>
@@ -126,31 +125,31 @@
                     <div class="col-lg-2 col-lg-offset-5">
                         <select class="form-control" data-target=".my-scoreboard" id="theSelect">
                             <option value="one" data-show=".week1">Week 1 (Daytona)</option>
-                            <option value="two" data-show=".week2">Week 2 (Atlanta)</option>
-                            <option value="three" data-show=".week3">Week 3 (Las Vegas)</option>
+                            <option value="two" data-show=".week2">Week 2 (Las Vegas)</option>
+                            <option value="three" data-show=".week3">Week 3 (Fontana)</option>
                             <option value="four" data-show=".week4">Week 4 (Phoenix)</option>
-                            <option value="five" data-show=".week5">Week 5 (Fontana)</option>
-                            <option value="six" data-show=".week6">Week 6 (Martinsville)</option>
+                            <option value="five" data-show=".week5">Week 5 (Atlanta)</option>
+                            <option value="six" data-show=".week6">Week 6 (Homestead-Miami)</option>
                             <option value="seven" data-show=".week7">Week 7 (Texas)</option>
                             <option value="eight" data-show=".week8">Week 8 (Bristol)</option>
                             <option value="nine" data-show=".week9">Week 9 (Richmond)</option>
                             <option value="ten" data-show=".week10">Week 10 (Talladega)</option>
                             <option value="eleven" data-show=".week11">Week 11 (Dover)</option>
-                            <option value="twelve" data-show=".week12">Week 12 (Kansas)</option>
+                            <option value="twelve" data-show=".week12">Week 12 (Martinsville)</option>
                             <option value="thirteen" data-show=".week13">Week 13 (Charlotte)</option>
-                            <option value="fourteen" data-show=".week14">Week 14 (Pocono)</option>
+                            <option value="fourteen" data-show=".week14">Week 14 (Kansas)</option>
                             <option value="fifteen" data-show=".week15">Week 15 (Michigan)</option>
                             <option value="sixteen" data-show=".week16">Week 16 (Sonoma)</option>
                             <option value="seventeen" data-show=".week17">Week 17 (Chicago)</option>
-                            <option value="eighteen" data-show=".week18">Week 18 (Daytona)</option>
-                            <option value="nineteen" data-show=".week19">Week 19 (Kentucky)</option>
-                            <option value="twenty" data-show=".week20">Week 20 (New Hampshire)</option>
-                            <option value="twenty-one" data-show=".week21">Week 21 (Pocono)</option>
-                            <option value="twenty-two" data-show=".week22">Week 22 (Watkins Glen)</option>
+                            <option value="eighteen" data-show=".week18">Week 18 (Pocono)</option>
+                            <option value="nineteen" data-show=".week19">Week 19 (Pocono)</option>
+                            <option value="twenty" data-show=".week20">Week 20 (Indianapolis)</option>
+                            <option value="twenty-one" data-show=".week21">Week 21 (Kentucky)</option>
+                            <option value="twenty-two" data-show=".week22">Week 22 (New Hampshire)</option>
                             <option value="twenty-three" data-show=".week23">Week 23 (Michigan)</option>
-                            <option value="twenty-four" data-show=".week24">Week 24 (Bristol)</option>
-                            <option value="twenty-five" data-show=".week25">Week 25 (Darlington)</option>
-                            <option value="twenty-six" data-show=".week26">Week 26 (Indianapolis)</option>
+                            <option value="twenty-four" data-show=".week24">Week 24 (Watkins Glen)</option>
+                            <option value="twenty-five" data-show=".week25">Week 25 (Dover)</option>
+                            <option value="twenty-six" data-show=".week26">Week 26 (Daytona)</option>
                             
                             <?php 
                             if($_GET['year'] == '2017') {
@@ -158,11 +157,13 @@
                                 echo '<option value="twenty-eight" data-show=".week28">Semi-Final Round (Weeks 28-31)</option>';
                                 echo '<option value="twenty-nine" data-show=".week29">Championship (Weeks 32-36)</option>';
                             }
-                            if($_GET['year'] == '2018' || $_GET['year'] == '2019') {
-                                echo '<option value="twenty-seven" data-show=".week27">Week 27 (Las Vegas)</option>';
-                                echo '<option value="twenty-eight" data-show=".week28">Wild Card Round (Richmond)</option>';
-                                echo '<option value="twenty-nine" data-show=".week29">Semi-Final Round (Weeks 29-32)</option>';
-                                echo '<option value="thirty" data-show=".week30">Championship (Weeks 33-36)</option>';
+                            if($_GET['year'] == '2018' || $_GET['year'] == '2019' || $_GET['year'] == '2020') {
+                                echo '<option value="twenty-seven" data-show=".week27">Week 27 (Darlington)</option>';
+                                if($_GET['year'] == '2018' || $_GET['year'] == '2019') {
+                                    echo '<option value="twenty-eight" data-show=".week28">Wild Card Round (Richmond)</option>';
+                                    echo '<option value="twenty-nine" data-show=".week29">Semi-Final Round (Weeks 29-32)</option>';
+                                    echo '<option value="thirty" data-show=".week30">Championship (Weeks 33-36)</option>';
+                                }
                             }
                             ?>
                             
