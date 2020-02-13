@@ -214,7 +214,7 @@
     </event>
     <event id="00276955-a81a-47e1-986d-e82d88b9c84b" name="NASCAR Cup Series at Richmond" start_date="2019-09-21">
       <track name="Richmond Raceway" market="Richmond" completed="1946" distance="0.75" shape="Tri-Oval" banking="Turns:14;Backstretch:8;Frontstretch:2" frontstretch="1290" backstretch="860" address="600 East Laburnum Avenue" city="Richmond" state="Virginia" zip="23222" country="USA" surface="Paved" track_type="Short Track" owner="International Speedway Corp." id="734227a1-a32f-40bf-b174-0c0e7aa0d696"/>
-      <race id="91e1b9f2-28bb-41f9-adac-63d1e08f6ad3" name="Federated Auto Parts 400" status="scheduled" number="29" distance="300" laps="400" chase_race="true" scheduled="2019-09-21T23:30:00+00:00">
+      <race id="91e1b9f2-28bb-41f9-adac-63d1e08f6ad3" name="Federated Auto Parts 400" status="scheduled" number="28" distance="300" laps="400" chase_race="true" scheduled="2019-09-21T23:30:00+00:00">
         <broadcast network="NBCSN" satellite="SiriusXM" radio="MRN"/>
         <prior_winner first_name="Kyle" last_name="Busch" full_name="Kyle Busch" id="85c06960-3610-4eff-9ef2-18641b84c952"/>
       </race>
