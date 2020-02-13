@@ -59,7 +59,7 @@
     </event>
     <event id="9811cfd5-cace-4508-86ca-52c18e46b1fa" name="NASCAR Cup Series at Texas" start_date="2020-03-29">
       <track name="Texas Motor Speedway" market="Fort Worth" completed="1995" distance="1.5" shape="Quad-Oval" banking="Turns:24;Backstretch:5;Tri-Oval:5" frontstretch="2250" backstretch="1330" address="3601 Highway 114" city="Fort Worth" state="Texas" zip="76177" country="USA" surface="Paved" track_type="Superspeedway" owner="Speedway Motorsports Inc." id="6c2be094-7477-4d92-b7ff-10dfda27e315"/>
-      <race id="1a88f233-5396-4894-8f04-b442d2de9920" name="O'Reilly Auto Parts 500" status="scheduled" number="7" distance="501" laps="334" chase_race="false" scheduled="2020-03-29T18:00:00+00:00" start_time="2020-03-29T18:00:00+00:00">
+      <race id="1a88f233-5396-4894-8f04-b442d2de9920" name="OReilly Auto Parts 500" status="scheduled" number="7" distance="501" laps="334" chase_race="false" scheduled="2020-03-29T18:00:00+00:00" start_time="2020-03-29T18:00:00+00:00">
         <broadcast network="Fox Sports 1" satellite="219" radio="PRN"/>
         <prior_winner first_name="Denny" last_name="Hamlin" full_name="Denny Hamlin" id="cb9d6f49-0044-4305-be9a-22d428e52c95"/>
       </race>
