@@ -1136,7 +1136,7 @@ function upload_results($simpleXml, $con) {
     if (mysqli_query($con, $trim_sql)) {
         $msg = "Race results uploaded successfully!<br>";
 
-        $sql2 = "UPDATE races SET closed = 1 WHERE race_id = '".$race_id."'";
+        $sql2 = "UPDATE races_2020 SET closed = 1 WHERE race_id = '".$race_id."'";
         if (mysqli_query($con, $sql2)) {
             $msg .= "<br>This week's race has been successfully updated to closed!<br>";
         } else {
