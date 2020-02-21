@@ -38,6 +38,11 @@ $brennan_poole = new Season_Driver("Brennan Poole");
 $christopher_bell = new Season_Driver("Christopher Bell");
 $jj_yeley = new Season_Driver("JJ Yeley");
 $ross_chastain = new Season_Driver("Ross Chastain");
+$bj_mcleod = new Season_Driver("BJ McLeod");
+$reed_sorenson = new Season_Driver("Reed Sorenson");
+$brendan_gaughan = new Season_Driver("Brendan Gaughan");
+$justin_haley = new Season_Driver("Justin Haley");
+$david_ragan = new Season_Driver("David Ragan");
 
 $season_drivers = array($tyler_reddick,
                         $michael_mcdowell,
@@ -76,7 +81,12 @@ $season_drivers = array($tyler_reddick,
                         $brennan_poole,
                         $christopher_bell,
                         $jj_yeley,
-                        $ross_chastain);
+                        $ross_chastain,
+                        $bj_mcleod,
+                        $reed_sorenson,
+                        $brendan_gaughan,
+                        $justin_haley,
+                        $david_ragan);
 
 
 $team_rachel = new Team("Team Rachel","Martin Truex Jr","Tyler Reddick","Michael McDowell","Quin Houff");
