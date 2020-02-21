@@ -854,16 +854,7 @@ function get_driver_standings($season_drivers, $year) {
     $i = 0;
     $break = 0;
     $tied = false;
-    $total_drivers = 0;
-    if ($year == '2020') {
-        $total_drivers = 37;
-    } else if ($year == '2019') {
-        $total_drivers = 43;
-    } else if ($year == '2018') {
-        $total_drivers = 47;
-    } else if ($year == '2017') {
-        $total_drivers = 48;
-    }
+    $total_drivers = count($season_drivers);
 
     while ($i < $total_drivers) {
         $next = ($i < $total_drivers - 1) ? $i + 1 : $i + 0;
