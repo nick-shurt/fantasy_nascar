@@ -98,7 +98,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_1_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -111,7 +111,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_2_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -124,7 +124,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_3_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -137,7 +137,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_4_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -150,7 +150,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_5_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -163,7 +163,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_6_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -176,7 +176,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_7_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -189,7 +189,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_8_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -202,7 +202,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_9_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -215,7 +215,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_10_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -228,7 +228,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_11_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -241,7 +241,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_12_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -254,7 +254,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_13_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -267,7 +267,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_14_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -280,7 +280,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_15_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -293,7 +293,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_16_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -306,7 +306,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_17_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -319,7 +319,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_18_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -332,7 +332,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_19_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -345,7 +345,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_20_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -358,7 +358,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_21_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -371,7 +371,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_22_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -384,7 +384,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_23_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -397,7 +397,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_24_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -410,7 +410,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_25_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -423,7 +423,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_26_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -436,7 +436,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_27_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 
@@ -449,7 +449,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Christopher Bell","Chris Buescher");
 
 $week_0_teams = array(); // DUMMY TEAM TO COVER INDEX 0 //
 $teams_week = array($week_0_teams,$week_1_teams,$week_2_teams,$week_3_teams,$week_4_teams,$week_5_teams,$week_6_teams,$week_7_teams,$week_8_teams,$week_9_teams,$week_10_teams,$week_11_teams,$week_12_teams,$week_13_teams,$week_14_teams,$week_15_teams,$week_16_teams,$week_17_teams,$week_18_teams,$week_19_teams,$week_20_teams,$week_21_teams,$week_22_teams,$week_23_teams,$week_24_teams,$week_25_teams,$week_26_teams,$week_27_teams);
