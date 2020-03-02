@@ -259,7 +259,7 @@
 
             <div id="tab5" class="tab-pane fade">
                 <h1>This is a test</h1>
-                <?php get_team_rosters(0, 1, $team_roster, $driver_rank, false); ?>
+                <?php get_edit_lineup(0, 1, $team_roster, $driver_rank); ?>
             </div>
         </div>   
     </div>    
