@@ -74,6 +74,7 @@
             <li><a data-toggle="tab" href="#tab2">Schedule/Results</a></li>
             <li><a data-toggle="tab" href="#tab3">Standings</a></li>
             <li><a data-toggle="tab" href="#tab4">Teams</a></li>
+            <li><a data-toggle="tab" href="#tab5">Edit Lineup</a></li>
           </ul>
         </div>
       </div>
@@ -254,6 +255,10 @@
                 <div class="row">
                     <?php get_team_rosters(8, 10, $team_roster, $driver_rank, true); ?>                      
                 </div>
+            </div>
+
+            <div id="tab4" class="tab-pane fade">
+                <h1>This is a test</h1>
             </div>
         </div>   
     </div>    
