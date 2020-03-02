@@ -906,7 +906,7 @@ function get_edit_lineup($num, $range, $team_roster, $driver_rank) {
     for ($i = $num; $i < $range; $i++) {
         echo '<div class="col-lg-3"><h2 style="color: white; text-align: center;">';
         //echo $team_roster[$i]->get_team_standing()->get_team_name();
-        echo "Edit lineup";
+        echo "Edit your team's lineup:";
         echo '</h2><div class="table-responsive"><table class="table" style="color: #fff; border: 3px solid #fff; background-color: #194775;">';
         echo '<thead><tr><th width="70%" style="border-right:1px solid white;background-color:#393e44;">Starting Drivers</th><th width="30%" style="background-color:#393e44;">Pts Rank</th></tr></thead><tbody><tr><td style="border-right:1px solid white;">';
         echo $team_roster[$i]->get_driver(1);
