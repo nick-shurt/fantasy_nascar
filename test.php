@@ -257,8 +257,9 @@
                 </div>
             </div>
 
-            <div id="tab4" class="tab-pane fade">
+            <div id="tab5" class="tab-pane fade">
                 <h1>This is a test</h1>
+                <?php get_team_rosters(0, 1, $team_roster, $driver_rank, false); ?>
             </div>
         </div>   
     </div>    
