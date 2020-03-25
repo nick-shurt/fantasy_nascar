@@ -116,15 +116,6 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <h1 style="color: #fff;text-align: center;">Next Race:</h1>
                         <?php show_next_race($U_NAME, $P_WORD, $DATABASE); ?>
-                        <?php
-                            for ($i = 1; $i < 28; $i++) {
-                                for ($k = 0; $k < 10; $k++) {
-                                    $j = $k + 1;
-                                    echo $i . "-" . $j . ": " . $teams_week[$i][$k]->get_team_standing()->get_team_name();
-                                    echo "<br/>";
-                                }
-                            }
-                        ?>
                     </div>  
                 </div>  
             </div>
