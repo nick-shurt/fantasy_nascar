@@ -119,7 +119,8 @@
                         <?php
                             for ($i = 1; $i < 28; $i++) {
                                 for ($k = 0; $k < 10; $k++) {
-                                    echo $i . "-" . $k+1 . ": " . $teams_week[$i][$k]->get_team_standing()->get_team_name();
+                                    $j = $k + 1;
+                                    echo $i . "-" . $j . ": " . $teams_week[$i][$k]->get_team_standing()->get_team_name();
                                     echo "<br/>";
                                 }
                             }
