@@ -453,7 +453,7 @@ $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace"
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
 $team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
 
-$week_27_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
+$week_27_teams = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);*/
 
 $team_rachel = new Team("Team Rachel","Martin Truex Jr","Tyler Reddick","Michael McDowell","Quin Houff");
 $team_donna = new Team("Team Donna","Kevin Harvick","Ross Chastain","Ryan Preece","Joey Gase");
@@ -464,7 +464,7 @@ $team_docks = new Team("Team Docks","Kyle Larson","Clint Bowyer","Ricky Stenhous
 $team_mike = new Team("Team Mike","Ryan Blaney","Alex Bowman","John H. Nemechek","JJ Yeley");
 $team_jru = new Team("Team Jru","Chase Elliott","Jimmie Johnson","Bubba Wallace","Greg Biffle");
 $team_nick = new Team("Team Nick","Kurt Busch","Erik Jones","Corey Lajoie","Timmy Hill");
-$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");*/
+$team_matt = new Team("Team Matt","William Byron","Aric Almirola","Chris Buescher","Christopher Bell");
 
 $team_names = array();
 $drivers1 = array();
@@ -496,12 +496,12 @@ for ($i = 0; $i < 270; $i++) {
     array_push($teams, new Team($team_names[$i], $drivers1[$i], $drivers2[$i], $drivers3[$i], $drivers4[$i]));
 }
 array_push($teams_week, $teams);
-array_push($team_standings, $teams);
+//array_push($team_standings, $teams);
 
 //$week_0_teams = array(); // DUMMY TEAM TO COVER INDEX 0 //
 //$teams_week = array($week_0_teams,$week_1_teams,$week_2_teams,$week_3_teams,$week_4_teams,$week_5_teams,$week_6_teams,$week_7_teams,$week_8_teams,$week_9_teams,$week_10_teams,$week_11_teams,$week_12_teams,$week_13_teams,$week_14_teams,$week_15_teams,$week_16_teams,$week_17_teams,$week_18_teams,$week_19_teams,$week_20_teams,$week_21_teams,$week_22_teams,$week_23_teams,$week_24_teams,$week_25_teams,$week_26_teams,$week_27_teams);
 
-//$team_standings = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
+$team_standings = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
 $team_roster = $team_standings;
 $driver_rank = array();
 
