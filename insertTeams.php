@@ -1,5 +1,6 @@
 <?php
 include 'db_credentials.php';
+include 'nascar_objects_methods.php';
 include 'nascar_drivers_teams_2020.php';
 
 echo "Inserting Teams...";
