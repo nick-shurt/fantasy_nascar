@@ -116,7 +116,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <h1 style="color: #fff;text-align: center;">Next Race:</h1>
                         <?php show_next_race($U_NAME, $P_WORD, $DATABASE); ?>
-                        <?php echo $teams_week; ?>
+                        <?php echo $teams_week[1][0]; ?>
                     </div>  
                 </div>  
             </div>
