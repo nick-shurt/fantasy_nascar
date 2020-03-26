@@ -923,7 +923,7 @@ function get_edit_lineup($num, $range, $team_roster, $driver_rank) {
         echo '</td></tr><tr><td style="border:3px solid white; border-right:none;background-color:#393e44;">Bench Driver</td><td style="border:3px solid white; border-left: none;background-color:#393e44;"></td></tr><tr><td style="border-right:1px solid white;">';
         echo $team_roster[$i]->get_fourth_driver();
         echo '</td><td>';
-        echo '<button type="button" class="btn btn-danger">Danger</button>';
+        echo '<button style="margin-left: 17px; padding: 0px 20px; font-size: 12px;" type="button" class="btn btn-danger">Bench</button>';
         echo '</td></tr></tbody></table></div></div>';
     }
 }
