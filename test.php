@@ -306,6 +306,7 @@
         $(document).ready(function() {
             $("button").click(function() {
                 var foundId;
+                console.log(this.id);
                 if (this.id == 'button1') {
                     foundId = 'slot1';
                 }
@@ -315,8 +316,9 @@
                 if (this.id == 'button3') {
                     foundId = 'slot3';
                 }
+                console.log(foundId);
                 var value = document.getElementById(foundId).innerText;
-                alert(value);
+                console.log(value);
             });
         });
     </script>
