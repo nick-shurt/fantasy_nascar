@@ -315,7 +315,7 @@
                 if (this.id == 'button3') {
                     foundId = 'slot3';
                 }
-                var value = document.getElementById(foundId).value;
+                var value = document.getElementById(foundId).innerText;
                 alert(value);
             });
         });
