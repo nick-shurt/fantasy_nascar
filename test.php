@@ -307,13 +307,13 @@
             $("button").click(function() {
                 var foundId;
                 console.log(this.id);
-                if (this.id == 'button1') {
+                if (this.id == 'bench1') {
                     foundId = 'slot1';
                 }
-                if (this.id == 'button2') {
+                if (this.id == 'bench2') {
                     foundId = 'slot2';
                 }
-                if (this.id == 'button3') {
+                if (this.id == 'bench3') {
                     foundId = 'slot3';
                 }
                 console.log(foundId);
