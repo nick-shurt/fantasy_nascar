@@ -303,14 +303,20 @@
     </script>
 
     <script>
-        $(document).ready(function(){
-            $(".up,.down").click(function(){
-                var row = $(this).parents("tr:first");
-                if ($(this).is(".up")) {
-                    row.insertBefore(row.prev());
-                } else {
-                    row.insertAfter(row.next());
+        $(document).ready(function() {
+            $("button").click(function() {
+                var foundId;
+                if (this.id == 'button1') {
+                    foundId = 'slot1';
                 }
+                if (this.id == 'button2') {
+                    foundId = 'slot2';
+                }
+                if (this.id == 'button3') {
+                    foundId = 'slot3';
+                }
+                var value = document.getElementById(foundId).value;
+                alert(value);
             });
         });
     </script>
