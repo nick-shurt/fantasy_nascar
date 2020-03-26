@@ -324,5 +324,17 @@
             });
         });
     </script>
+
+    <script> function setHidden() {
+		document.getElementById("driver1").value = document.getElementById('slot1').innerText;
+		document.getElementById("driver2").value = document.getElementById('slot2').innerText;
+		document.getElementById("driver3").value = document.getElementById('slot3').innerText;
+        document.getElementById("driver4").value = document.getElementById('slot4').innerText;
+        console.log(document.getElementById("driver1").value);
+        console.log(document.getElementById("driver2").value);
+        console.log(document.getElementById("driver3").value);
+        console.log(document.getElementById("driver4").value);
+	}
+	</script>
 </body>
 </html>

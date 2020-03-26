@@ -905,7 +905,7 @@ function get_driver_standings($season_drivers, $year) {
 function get_edit_lineup($num, $range, $team_roster, $driver_rank) {
     for ($i = $num; $i < $range; $i++) {
         echo '<div class="col-lg-3"><h2 style="color: white; text-align: center;">';
-        //echo $team_roster[$i]->get_team_standing()->get_team_name();
+        echo '<form action="" method="POST" onsubmit="setHidden()">'
         echo "Edit your team's lineup:";
         echo '</h2><div class="table-responsive"><table class="table" style="color: #fff; border: 3px solid #fff; background-color: #194775;">';
         echo '<thead><tr><th width="70%" style="border-right:1px solid white;background-color:#393e44;">Starting Drivers</th><th width="30%" style="background-color:#393e44;"></th></tr></thead><tbody><tr><td id="slot1" style="border-right:1px solid white;">';
@@ -923,7 +923,14 @@ function get_edit_lineup($num, $range, $team_roster, $driver_rank) {
         echo '</td></tr><tr><td style="border:3px solid white; border-right:none;background-color:#393e44;">Bench Driver</td><td style="border:3px solid white; border-left: none;background-color:#393e44;"></td></tr><tr><td id="slot4" style="border-right:1px solid white;">';
         echo $team_roster[$i]->get_fourth_driver();
         echo '</td><td>';
-        echo '</td></tr></tbody></table></div></div>';
+        echo '</td></tr></tbody></table></div>';
+        echo '<input class="submit" type="submit" value="Submit" name="submit">';
+        echo '<input type="hidden" id="driver1" name="driver1" value="" >';
+        echo '<input type="hidden" id="driver2" name="driver2" value="" >';
+        echo '<input type="hidden" id="driver3" name="driver3" value="" >';
+        echo '<input type="hidden" id="driver4" name="driver4" value="" >';
+        echo '</form>';
+        echo '</div>';
     }
 }
 
