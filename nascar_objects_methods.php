@@ -908,22 +908,22 @@ function get_edit_lineup($num, $range, $team_roster, $driver_rank) {
         //echo $team_roster[$i]->get_team_standing()->get_team_name();
         echo "Edit your team's lineup:";
         echo '</h2><div class="table-responsive"><table class="table" style="color: #fff; border: 3px solid #fff; background-color: #194775;">';
-        echo '<thead><tr><th width="70%" style="border-right:1px solid white;background-color:#393e44;">Starting Drivers</th><th width="30%" style="background-color:#393e44;">Pts Rank</th></tr></thead><tbody><tr><td style="border-right:1px solid white;">';
+        echo '<thead><tr><th width="70%" style="border-right:1px solid white;background-color:#393e44;">Starting Drivers</th><th width="30%" style="background-color:#393e44;"></th></tr></thead><tbody><tr><td style="border-right:1px solid white;">';
         echo $team_roster[$i]->get_driver(1);
         echo '</td><td>';
-        echo (array_key_exists($team_roster[$i]->get_driver(1), $driver_rank)) ? $driver_rank[$team_roster[$i]->get_driver(1)] : 'N/A';
+        echo '<a href="#" class="up">Up</a><a href="#" class="down">Down</a>';
         echo '</td></tr><tr><td style="border-right: 1px solid white;">';
         echo $team_roster[$i]->get_driver(2);
         echo '</td><td>';
-        echo (array_key_exists($team_roster[$i]->get_driver(2), $driver_rank)) ? $driver_rank[$team_roster[$i]->get_driver(2)] : 'N/A';
+        echo '<a href="#" class="up">Up</a><a href="#" class="down">Down</a>';
         echo '</td></tr><tr><td style="border-right: 1px solid white;">';
         echo $team_roster[$i]->get_driver(3);
         echo '</td><td>';
-        echo (array_key_exists($team_roster[$i]->get_driver(3), $driver_rank)) ? $driver_rank[$team_roster[$i]->get_driver(3)] : 'N/A';
+        echo '<a href="#" class="up">Up</a><a href="#" class="down">Down</a>';
         echo '</td></tr><tr><td style="border:3px solid white; border-right:none;background-color:#393e44;">Bench Driver</td><td style="border:3px solid white; border-left: none;background-color:#393e44;"></td></tr><tr><td style="border-right:1px solid white;">';
         echo $team_roster[$i]->get_fourth_driver();
         echo '</td><td>';
-        echo (array_key_exists($team_roster[$i]->get_fourth_driver(), $driver_rank)) ? $driver_rank[$team_roster[$i]->get_fourth_driver()] : 'N/A';
+        echo '<a href="#" class="up">Up</a><a href="#" class="down">Down</a>';
         echo '</td></tr></tbody></table></div></div>';
     }
 }
