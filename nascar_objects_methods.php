@@ -920,7 +920,7 @@ function get_edit_lineup($num, $range, $team_roster, $driver_rank) {
         echo $team_roster[$i]->get_driver(3);
         echo '</td><td>';
         echo '<button id="bench3" style="display: block; margin: auto; padding: 0px 20px; font-size: 12px;" type="button" class="btn btn-danger">Bench</button>';
-        echo '</td></tr><tr><td id="slot4" style="border:3px solid white; border-right:none;background-color:#393e44;">Bench Driver</td><td style="border:3px solid white; border-left: none;background-color:#393e44;"></td></tr><tr><td style="border-right:1px solid white;">';
+        echo '</td></tr><tr><td style="border:3px solid white; border-right:none;background-color:#393e44;">Bench Driver</td><td style="border:3px solid white; border-left: none;background-color:#393e44;"></td></tr><tr><td id="slot4" style="border-right:1px solid white;">';
         echo $team_roster[$i]->get_fourth_driver();
         echo '</td><td>';
         echo '</td></tr></tbody></table></div></div>';
