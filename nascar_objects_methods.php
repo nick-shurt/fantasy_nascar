@@ -924,7 +924,7 @@ function get_edit_lineup($num, $range, $team_roster, $driver_rank) {
         echo $team_roster[$i]->get_fourth_driver();
         echo '</td><td>';
         echo '</td></tr></tbody></table></div>';
-        echo '<input type="submit" value="Submit" name="submit" style="width: 150px; height: 32px; border: 2px solid #E6A126; border-radius: 5px; background-color: #FFB32A; color: black;">';
+        echo '<input class="btn btn-warning" type="submit" value="Submit" name="submit" style="width: 150px; color: black; margin-top: 5px;">';
         echo '<input type="hidden" id="driver1" name="driver1" value="" >';
         echo '<input type="hidden" id="driver2" name="driver2" value="" >';
         echo '<input type="hidden" id="driver3" name="driver3" value="" >';
