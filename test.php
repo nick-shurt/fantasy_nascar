@@ -318,6 +318,8 @@
                 }
                 console.log(foundId);
                 var value = document.getElementById(foundId).innerText;
+                document.getElementById(foundId).innerText = document.getElementById('slot4').innerText;
+                document.getElementById('slot4').innerText = value;
                 console.log(value);
             });
         });
