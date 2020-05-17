@@ -128,28 +128,28 @@
                             <option value="two" data-show=".week2">Week 2 (Las Vegas)</option>
                             <option value="three" data-show=".week3">Week 3 (Fontana)</option>
                             <option value="four" data-show=".week4">Week 4 (Phoenix)</option>
-                            <option value="five" data-show=".week5">Week 5 (Atlanta)</option>
-                            <option value="six" data-show=".week6">Week 6 (Homestead-Miami)</option>
-                            <option value="seven" data-show=".week7">Week 7 (Texas)</option>
-                            <option value="eight" data-show=".week8">Week 8 (Bristol)</option>
-                            <option value="nine" data-show=".week9">Week 9 (Richmond)</option>
-                            <option value="ten" data-show=".week10">Week 10 (Talladega)</option>
-                            <option value="eleven" data-show=".week11">Week 11 (Dover)</option>
-                            <option value="twelve" data-show=".week12">Week 12 (Martinsville)</option>
-                            <option value="thirteen" data-show=".week13">Week 13 (Charlotte)</option>
-                            <option value="fourteen" data-show=".week14">Week 14 (Kansas)</option>
-                            <option value="fifteen" data-show=".week15">Week 15 (Michigan)</option>
-                            <option value="sixteen" data-show=".week16">Week 16 (Sonoma)</option>
-                            <option value="seventeen" data-show=".week17">Week 17 (Chicago)</option>
-                            <option value="eighteen" data-show=".week18">Week 18 (Pocono)</option>
-                            <option value="nineteen" data-show=".week19">Week 19 (Pocono)</option>
-                            <option value="twenty" data-show=".week20">Week 20 (Indianapolis)</option>
-                            <option value="twenty-one" data-show=".week21">Week 21 (Kentucky)</option>
-                            <option value="twenty-two" data-show=".week22">Week 22 (New Hampshire)</option>
-                            <option value="twenty-three" data-show=".week23">Week 23 (Michigan)</option>
-                            <option value="twenty-four" data-show=".week24">Week 24 (Watkins Glen)</option>
-                            <option value="twenty-five" data-show=".week25">Week 25 (Dover)</option>
-                            <option value="twenty-six" data-show=".week26">Week 26 (Daytona)</option>
+                            <option value="five" data-show=".week5">Week 5 (Darlington)</option>
+                            <option value="six" data-show=".week6">Week 6 (Darlington)</option>
+                            <option value="seven" data-show=".week7">Week 7 (Charlotte)</option>
+                            <option value="eight" data-show=".week8">Week 8 (Charlotte)</option>
+                            <option value="nine" data-show=".week9">Week 9 (Bristol)</option>
+                            <option value="ten" data-show=".week10">Week 10 (Atlanta)</option>
+                            <option value="eleven" data-show=".week11">Week 11 (Martinsville)</option>
+                            <option value="twelve" data-show=".week12">Week 12 (Homestead-Miami)</option>
+                            <option value="thirteen" data-show=".week13">Week 13 (Sonoma)</option>
+                            <option value="fourteen" data-show=".week14">Week 14 (Chicago)</option>
+                            <option value="fifteen" data-show=".week15">Week 15 (Talladega)</option>
+                            <option value="sixteen" data-show=".week16">Week 16 (Pocono)</option>
+                            <option value="seventeen" data-show=".week17">Week 17 (Pocono)</option>
+                            <option value="eighteen" data-show=".week18">Week 18 (Indianapolis)</option>
+                            <option value="nineteen" data-show=".week19">Week 19 (Kentucky)</option>
+                            <option value="twenty" data-show=".week20">Week 20 (New Hampshire)</option>
+                            <option value="twenty-one" data-show=".week21">Week 21 (Michigan)</option>
+                            <option value="twenty-two" data-show=".week22">Week 22 (Watkins Glen)</option>
+                            <option value="twenty-three" data-show=".week23">Week 23 (Dover)</option>
+                            <option value="twenty-four" data-show=".week24">Week 24 (Daytona)</option>
+                            <option value="twenty-five" data-show=".week25">Week 25 (Darlington)</option>
+                            <option value="twenty-six" data-show=".week26">Week 26 (Richmond)</option>
                             
                             <?php 
                             if($_GET['year'] == '2017') {
