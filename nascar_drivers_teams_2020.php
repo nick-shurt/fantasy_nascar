@@ -59,6 +59,7 @@ $reed_sorenson = new Season_Driver("Reed Sorenson");
 $brendan_gaughan = new Season_Driver("Brendan Gaughan");
 $justin_haley = new Season_Driver("Justin Haley");
 $david_ragan = new Season_Driver("David Ragan");
+$matt_kenseth = new Season_Driver("Matt Kenseth");
 
 $season_drivers = array($tyler_reddick,
                         $michael_mcdowell,
@@ -102,7 +103,8 @@ $season_drivers = array($tyler_reddick,
                         $reed_sorenson,
                         $brendan_gaughan,
                         $justin_haley,
-                        $david_ragan);
+                        $david_ragan,
+                        $matt_kenseth);
 
 
 $team_names = array();
