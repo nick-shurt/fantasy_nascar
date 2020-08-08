@@ -1,7 +1,5 @@
 <?php
 
-include 'nascar_results_2020.php';
-
 /* CLASSES */
 class Team_Standing {
 
@@ -1083,7 +1081,7 @@ function show_next_race($U_Name, $P_Word, $db) {
     echo "</tr>";
     echo "<tr>";
     echo "<th style='border-right: 3px solid #fff;'>Previous Winner</th>";
-    echo "<td>" . $race_data[8] . " " . $race_count . "</td>";
+    echo "<td>" . $race_data[8] . "</td>";
     echo "</tr>";
     echo "</table>";
     echo "</div>";
