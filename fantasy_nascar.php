@@ -145,11 +145,11 @@
                             <option value="nineteen" data-show=".week19">Week 19 (Kansas)</option>
                             <option value="twenty" data-show=".week20">Week 20 (New Hampshire)</option>
                             <option value="twenty-one" data-show=".week21">Week 21 (Michigan)</option>
-                            <option value="twenty-two" data-show=".week22">Week 22 (Watkins Glen)</option>
-                            <option value="twenty-three" data-show=".week23">Week 23 (Dover)</option>
-                            <option value="twenty-four" data-show=".week24">Week 24 (Daytona)</option>
-                            <option value="twenty-five" data-show=".week25">Week 25 (Darlington)</option>
-                            <option value="twenty-six" data-show=".week26">Week 26 (Richmond)</option>
+                            <option value="twenty-two" data-show=".week22">Week 22 (Michigan)</option>
+                            <option value="twenty-three" data-show=".week23">Week 23 (Daytona)</option>
+                            <option value="twenty-four" data-show=".week24">Week 24 (Dover)</option>
+                            <option value="twenty-five" data-show=".week25">Week 25 (Dover)</option>
+                            <option value="twenty-six" data-show=".week26">Week 26 (Daytona)</option>
                             
                             <?php 
                             if($_GET['year'] == '2017') {
@@ -281,7 +281,7 @@
     <script>
     $(function() {
         //var optionValue  = "<?php get_current_week(); ?>";
-        var optionValue = "twenty";
+        var optionValue = "twenty-one";
         $("#theSelect").val(optionValue)
         .find("option[value=" + optionValue +"]").attr('selected', true);
     })
