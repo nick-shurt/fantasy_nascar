@@ -59,7 +59,7 @@
     </event>
     <event id="9811cfd5-cace-4508-86ca-52c18e46b1fa" name="NASCAR Cup Series at Texas" start_date="2020-03-29">
       <track name="Texas Motor Speedway" market="Fort Worth" completed="1995" distance="1.5" shape="Quad-Oval" banking="Turns:24;Backstretch:5;Tri-Oval:5" frontstretch="2250" backstretch="1330" address="3601 Highway 114" city="Fort Worth" state="Texas" zip="76177" country="USA" surface="Paved" track_type="Superspeedway" owner="Speedway Motorsports Inc." id="6c2be094-7477-4d92-b7ff-10dfda27e315"/>
-      <race id="1a88f233-5396-4894-8f04-b442d2de9920" name="O'Reilly Auto Parts 500" status="rescheduled" distance="501" laps="334" chase_race="false" award_pole="true" stage_count="2" stage_1_laps="105" stage_2_laps="105" stage_3_laps="124" scheduled="2020-03-29T18:00:00+00:00" start_time="2020-03-29T18:00:00+00:00">
+      <race id="1a88f233-5396-4894-8f04-b442d2de9920" name="OReilly Auto Parts 500" status="rescheduled" distance="501" laps="334" chase_race="false" award_pole="true" stage_count="2" stage_1_laps="105" stage_2_laps="105" stage_3_laps="124" scheduled="2020-03-29T18:00:00+00:00" start_time="2020-03-29T18:00:00+00:00">
         <broadcast network="FS1" satellite="219" radio="PRN"/>
         <prior_winner first_name="Denny" last_name="Hamlin" full_name="Denny Hamlin" id="cb9d6f49-0044-4305-be9a-22d428e52c95"/>
       </race>
@@ -222,14 +222,14 @@
     </event>
     <event id="5c2fd826-ed4a-41c1-bc54-6ace997dfa28" name="NASCAR Cup Series at Texas" start_date="2020-07-19">
       <track name="Texas Motor Speedway" market="Fort Worth" completed="1995" distance="1.5" shape="Quad-Oval" banking="Turns:24;Backstretch:5;Tri-Oval:5" frontstretch="2250" backstretch="1330" address="3601 Highway 114" city="Fort Worth" state="Texas" zip="76177" country="USA" surface="Paved" track_type="Superspeedway" owner="Speedway Motorsports Inc." id="6c2be094-7477-4d92-b7ff-10dfda27e315"/>
-      <race id="e4223744-0c25-4cd8-9142-229feb0ac069" name="O'Reilly Auto Parts 500" status="closed" number="18" distance="501" laps="334" chase_race="false" award_pole="false" stage_count="2" stage_1_laps="105" stage_2_laps="105" stage_3_laps="124" scheduled="2020-07-19T19:00:00+00:00" start_time="2020-07-19T19:00:00+00:00" end_time="2020-07-19T23:00:00+00:00">
+      <race id="e4223744-0c25-4cd8-9142-229feb0ac069" name="OReilly Auto Parts 500" status="closed" number="18" distance="501" laps="334" chase_race="false" award_pole="false" stage_count="2" stage_1_laps="105" stage_2_laps="105" stage_3_laps="124" scheduled="2020-07-19T19:00:00+00:00" start_time="2020-07-19T19:00:00+00:00" end_time="2020-07-19T23:00:00+00:00">
         <broadcast network="NBCSN" satellite="220" radio="PRN"/>
         <prior_winner first_name="Denny" last_name="Hamlin" full_name="Denny Hamlin" id="cb9d6f49-0044-4305-be9a-22d428e52c95"/>
       </race>
     </event>
     <event id="9d64c0a5-bae2-4184-8a71-934fcfcc6c7f" name="NASCAR Cup Series at Kansas" start_date="2020-07-23">
       <track name="Kansas Speedway" market="Kansas City" completed="2001" distance="1.5" shape="D-Shaped Oval" banking="Turns:15;Backstretch:5:Frontstretch:10.4" frontstretch="2685" backstretch="2207" address="400 Speedway Blvd." city="Kansas City" state="Kansas" zip="66111" country="USA" surface="Paved" track_type="Superspeedway" owner="International Speedway Corp." id="42d3569d-cc77-4072-88d5-f63046eddf39"/>
-      <race id="955587b0-7b31-4083-8288-716ef9c158f3" name="Super Start Batteries 400 Presented by O'Reilly Auto Parts" status="closed" number="19" distance="400" laps="267" chase_race="false" award_pole="false" stage_count="2" stage_1_laps="80" stage_2_laps="80" stage_3_laps="107" scheduled="2020-07-23T23:30:00+00:00" start_time="2020-07-23T23:30:00+00:00" end_time="2020-07-24T03:00:00+00:00">
+      <race id="955587b0-7b31-4083-8288-716ef9c158f3" name="Super Start Batteries 400 Presented by OReilly Auto Parts" status="closed" number="19" distance="400" laps="267" chase_race="false" award_pole="false" stage_count="2" stage_1_laps="80" stage_2_laps="80" stage_3_laps="107" scheduled="2020-07-23T23:30:00+00:00" start_time="2020-07-23T23:30:00+00:00" end_time="2020-07-24T03:00:00+00:00">
         <broadcast network="NBCSN" satellite="220" radio="MRN"/>
         <prior_winner first_name="Brad" last_name="Keselowski" full_name="Brad Keselowski" id="0ce4113d-34c8-4272-b658-3b929238dbd3"/>
       </race>
