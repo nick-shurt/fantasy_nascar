@@ -1,5 +1,7 @@
 <?php
 
+include 'nascar_results_2020.php';
+
 /* CLASSES */
 class Team_Standing {
 
