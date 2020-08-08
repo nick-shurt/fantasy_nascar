@@ -115,7 +115,6 @@
                 <div class="row top_margin">
                     <div class="col-lg-8 col-lg-offset-2">
                         <h1 style="color: #fff;text-align: center;">Next Race:</h1>
-                        <?php echo $race_count; ?>
                         <?php show_next_race($U_NAME, $P_WORD, $DATABASE); ?>
                     </div>  
                 </div>  
