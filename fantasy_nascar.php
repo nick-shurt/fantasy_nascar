@@ -281,7 +281,7 @@
     <script>
     $(function() {
         //var optionValue  = "<?php get_current_week(); ?>";
-        var optionValue = "twenty-six";
+        var optionValue = "twenty-seven";
         $("#theSelect").val(optionValue)
         .find("option[value=" + optionValue +"]").attr('selected', true);
     })
