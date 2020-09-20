@@ -88,4 +88,27 @@ for ($i = 0; $i < $race_count; $i++) {
     get_season_points_new($season_drivers, $race_ids[$i], $con);
 }
 
+if ($wildcard) {
+    get_results_new($wildcard_teams[0], $race_ids[$i], $con);
+    get_results_new($wildcard_teams[1], $race_ids[$i], $con);
+}
+
+if ($semis) {
+    $semis_count = $playoff_count - 1;
+    for ($s = 0; $s < $semis_count; $s++) {
+        get_playoff_results_new($semifinal_teams[0], $race_ids[$s + 28], $con);
+        get_playoff_results_new($semifinal_teams[1], $race_ids[$s + 28], $con);
+        get_playoff_results_new($semifinal_teams[2], $race_ids[$s + 28], $con);
+        get_playoff_results_new($semifinal_teams[3], $race_ids[$s + 28], $con);
+    }
+}
+
+if ($finals) {
+    $finals_count = $playoff_count - 5;
+    for ($f = 0; $f < $finals_count; $f++) {
+        get_playoff_results_new($championship_teams[0], $race_ids[$f + 32], $con);
+        get_playoff_results_new($championship_teams[1], $race_ids[$f + 32], $con);
+    }
+}
+
 ?>
