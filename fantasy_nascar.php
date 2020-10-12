@@ -198,7 +198,7 @@
                             get_championship_matchup($championship_teams, 30, true);
                         } else if ($_GET['year'] == '2020') {
                             get_wildcard_matchup($wildcard_teams, 28, true);
-                            get_semifinal_matchups($semifinal_teams, 29, false);
+                            get_semifinal_matchups($semifinal_teams, 29, true);
                         }     
                     ?>
                 </div>
