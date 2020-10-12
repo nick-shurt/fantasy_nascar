@@ -166,4 +166,9 @@ $team_donna = new Team("#3 Team Donna","Kevin Harvick","Ryan Newman","Ryan Preec
 
 $semifinal_teams = array($team_chives, $team_joey, $team_jru, $team_donna);
 
+$team_chives = new Team("#1 Team Chives","Denny Hamlin","Austin Dillon","Cole Custer","Richard Petty");
+$team_donna = new Team("#3 Team Donna","Kevin Harvick","Ryan Newman","Ryan Preece","Joey Gase");
+
+$championship_teams = array($team_chives, $team_donna);
+
 ?>

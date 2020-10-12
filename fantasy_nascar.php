@@ -199,6 +199,7 @@
                         } else if ($_GET['year'] == '2020') {
                             get_wildcard_matchup($wildcard_teams, 28, true);
                             get_semifinal_matchups($semifinal_teams, 29, true);
+                            get_championship_matchup($championship_teams, 30, false);
                         }     
                     ?>
                 </div>
@@ -287,7 +288,7 @@
     <script>
     $(function() {
         //var optionValue  = "<?php get_current_week(); ?>";
-        var optionValue = "twenty-nine";
+        var optionValue = "thirty";
         $("#theSelect").val(optionValue)
         .find("option[value=" + optionValue +"]").attr('selected', true);
     })
