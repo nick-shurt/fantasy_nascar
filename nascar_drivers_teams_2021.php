@@ -109,7 +109,7 @@ $season_drivers = array($tyler_reddick,
                         $cody_ware,
                         $noah_gragson,
                         $aj_allmendinger);
-                        
+
 
 $team_names = array();
 $drivers1 = array();
@@ -141,18 +141,18 @@ for ($i = 0; $i < 270; $i++) {
 }
 array_push($teams_week, $teams);
 
-$team_rachel = new Team($team_names[260],$drivers1[260],$drivers2[260],$drivers3[260],$drivers4[260]);
-$team_donna = new Team($team_names[261],$drivers1[261],$drivers2[261],$drivers3[261],$drivers4[261]);
-$team_jim = new Team($team_names[262],$drivers1[262],$drivers2[262],$drivers3[262],$drivers4[262]);
-$team_chives = new Team($team_names[263],$drivers1[263],$drivers2[263],$drivers3[263],$drivers4[263]);
-$team_joey = new Team($team_names[264],$drivers1[264],$drivers2[264],$drivers3[264],$drivers4[264]);
-$team_docks = new Team($team_names[265],$drivers1[265],$drivers2[265],$drivers3[265],$drivers4[265]);
-$team_mike = new Team($team_names[266],$drivers1[266],$drivers2[266],$drivers3[266],$drivers4[266]);
-$team_jru = new Team($team_names[267],$drivers1[267],$drivers2[267],$drivers3[267],$drivers4[267]);
-$team_nick = new Team($team_names[268],$drivers1[268],$drivers2[268],$drivers3[268],$drivers4[268]);
-$team_matt = new Team($team_names[269],$drivers1[269],$drivers2[269],$drivers3[269],$drivers4[269]);
+$team_matt = new Team($team_names[260],$drivers1[260],$drivers2[260],$drivers3[260],$drivers4[260]);
+$team_nick = new Team($team_names[261],$drivers1[261],$drivers2[261],$drivers3[261],$drivers4[261]);
+$team_donna = new Team($team_names[262],$drivers1[262],$drivers2[262],$drivers3[262],$drivers4[262]);
+$team_joey = new Team($team_names[263],$drivers1[263],$drivers2[263],$drivers3[263],$drivers4[263]);
+$team_rachel = new Team($team_names[264],$drivers1[264],$drivers2[264],$drivers3[264],$drivers4[264]);
+$team_chives = new Team($team_names[265],$drivers1[265],$drivers2[265],$drivers3[265],$drivers4[265]);
+$team_jim = new Team($team_names[266],$drivers1[266],$drivers2[266],$drivers3[266],$drivers4[266]);
+$team_mike = new Team($team_names[267],$drivers1[267],$drivers2[267],$drivers3[267],$drivers4[267]);
+$team_jru = new Team($team_names[268],$drivers1[268],$drivers2[268],$drivers3[268],$drivers4[268]);
+$team_docks = new Team($team_names[269],$drivers1[269],$drivers2[269],$drivers3[269],$drivers4[269]);
 
-$team_standings = array($team_rachel,$team_donna,$team_jim,$team_chives,$team_joey,$team_docks,$team_mike,$team_jru,$team_nick,$team_matt);
+$team_standings = array($team_matt,$team_nick,$team_donna,$team_joey,$team_rachel,$team_chives,$team_jim,$team_mike,$team_jru,$team_docks);
 $team_roster = $team_standings;
 $driver_rank = array();
 
