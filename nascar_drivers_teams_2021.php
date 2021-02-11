@@ -109,20 +109,7 @@ $season_drivers = array($tyler_reddick,
                         $cody_ware,
                         $noah_gragson,
                         $aj_allmendinger);
-
-
-$team_matt = new Team("Team Matt","Ryan Blaney","Aric Almirola","Ross Chastain","Derrike Cope");
-$team_nick = new Team("Team Nick","Kurt Busch","Alex Bowman","Michael McDowell","Daniel Suarez");
-$team_donna = new Team("Team Donna","Chase Elliott","Tyler Reddick","Ryan Preece","BJ Mcleod");
-$team_joey = new Team("Team Joey","Martin Truex Jr","Christopher Bell","Corey Lajoie","John H. Nemechek");
-$team_rachel = new Team("Team Rachel","Kyle Busch","Austin Dillon","Anthony Alfredo","Kaz Grala");
-$team_chives = new Team("Team Chives","Brad Keselowski","William Byron","Joey Gase","Cody Ware");
-$team_jim = new Team("Team Jim","Denny Hamlin","Bubba Wallace","Chris Buescher","Timmy Hill");
-$team_mike = new Team("Team Mike","Joey Logano","Cole Custer","Matt DiBenedetto","Ricky Stenhouse Jr");
-$team_jru = new Team("Team Jru","Kyle Larson","Chase Briscoe","Ryan Newman","Quin Houff");
-$team_docks = new Team("Team Docks","Kevin Harvick","Erik Jones","Josh Biliki","Dale Earnhardt Sr");
-
-$week_1_teams = array($team_matt,$team_nick,$team_donna,$team_joey,$team_rachel,$team_chives,$team_jim,$team_mike,$team_jru,$team_docks);
+                        
 
 $team_names = array();
 $drivers1 = array();
@@ -130,7 +117,7 @@ $drivers2 = array();
 $drivers3 = array();
 $drivers4 = array();
 
-$getRaceData = "SELECT * FROM teams_2020";
+$getRaceData = "SELECT * FROM teams_2021";
 $res = mysqli_query($con, $getRaceData);
 
 while ($row = mysqli_fetch_array($res)) {
