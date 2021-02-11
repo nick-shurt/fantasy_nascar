@@ -2,11 +2,11 @@
     if(isset($_GET['year'])) {
         $url_year = $_GET['year'];
         $num_year = (int)$url_year;
-        if($num_year < 2017 || $num_year > 2020) {
-            header("Location: /fantasy_nascar.php?year=2020");
+        if($num_year < 2017 || $num_year > 2021) {
+            header("Location: /fantasy_nascar.php?year=2021");
         } 
     } else {
-        header("Location: /fantasy_nascar.php?year=2020");
+        header("Location: /fantasy_nascar.php?year=2021");
     }      
 ?>
 <!DOCTYPE html>
@@ -85,6 +85,7 @@
             <option value="2018" <?php if($_GET['year'] == '2018') echo "selected='selected'"; ?> >2018</option>
             <option value="2019" <?php if($_GET['year'] == '2019') echo "selected='selected'"; ?> >2019</option>
             <option value="2020" <?php if($_GET['year'] == '2020') echo "selected='selected'"; ?> >2020</option>
+            <option value="2021" <?php if($_GET['year'] == '2021') echo "selected='selected'"; ?> >2021</option>
         </select>
     </div>
 
@@ -107,6 +108,10 @@
         include 'nascar_drivers_teams_2020.php';
         include 'nascar_results_2020.php';
     }
+    if($_GET['year'] == '2021') {
+        include 'nascar_drivers_teams_2021.php';
+        include 'nascar_results_2021.php';
+    }
     ?>
 
     <div class="container-fluid">
@@ -114,7 +119,7 @@
             <div id="tab1" class="tab-pane fade in active">
                 <div class="row top_margin">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <h1 style="color: #fff;text-align: center;">Next Race1:</h1>
+                        <h1 style="color: #fff;text-align: center;">Next Race:</h1>
                         <?php show_next_race($U_NAME, $P_WORD, $DATABASE); ?>
                     </div>  
                 </div>  
@@ -157,11 +162,13 @@
                                 echo '<option value="twenty-eight" data-show=".week28">Semi-Final Round (Weeks 28-31)</option>';
                                 echo '<option value="twenty-nine" data-show=".week29">Championship (Weeks 32-36)</option>';
                             }
-                            if($_GET['year'] == '2018' || $_GET['year'] == '2019' || $_GET['year'] == '2020') {
+                            if($_GET['year'] == '2018' || $_GET['year'] == '2019' || $_GET['year'] == '2020' || $_GET['year'] == '2021') {
                                 echo '<option value="twenty-seven" data-show=".week27">Week 27 (Darlington)</option>';
-                                echo '<option value="twenty-eight" data-show=".week28">Wild Card Round (Richmond)</option>';
-                                echo '<option value="twenty-nine" data-show=".week29">Semi-Final Round (Weeks 29-32)</option>';
-                                echo '<option value="thirty" data-show=".week30">Championship (Weeks 33-36)</option>';
+                                if($_GET['year'] == '2018' || $_GET['year'] == '2019' || $_GET['year'] == '2020') {
+                                    echo '<option value="twenty-eight" data-show=".week28">Wild Card Round (Richmond)</option>';
+                                    echo '<option value="twenty-nine" data-show=".week29">Semi-Final Round (Weeks 29-32)</option>';
+                                    echo '<option value="thirty" data-show=".week30">Championship (Weeks 33-36)</option>';
+                                }
                             }
                             ?>
                             
@@ -282,8 +289,7 @@
 
     <script>
     $(function() {
-        //var optionValue  = "<?php get_current_week(); ?>";
-        var optionValue = "thirty";
+        var optionValue  = "<?php get_current_week(); ?>";
         $("#theSelect").val(optionValue)
         .find("option[value=" + optionValue +"]").attr('selected', true);
     })

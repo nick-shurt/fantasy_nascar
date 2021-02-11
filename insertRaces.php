@@ -19,7 +19,7 @@ if (!mysqli_select_db($con, $db))  {
     exit();  
 }
 
-$xml=simplexml_load_file("2020_cup_schedule.xml");
+$xml=simplexml_load_file("2021_cup_schedule.xml");
 
 $k = 1;
 $error = false;
@@ -41,7 +41,7 @@ foreach ($xml->season->event as $event) {
             $closed = 0;
 
 
-            $sql = "INSERT INTO races_2020 (race_id, track, name, date, laps, distance, broadcast, prev_winner, number, closed) VALUES ";
+            $sql = "INSERT INTO races_2021 (race_id, track, name, date, laps, distance, broadcast, prev_winner, number, closed) VALUES ";
             $sql .= "('" . $race_id . "', '" . $track . "', '" . $name . "', '" . $date . "', '" . $laps . "', '" . $distance . "', '" . $broadcast . "', '" . $prev_winner . "', '" . $number . "', '" . $closed . "')";
 
             if (mysqli_query($con, $sql)) {
