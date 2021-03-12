@@ -1147,7 +1147,10 @@ function upload_results($simpleXml, $con) {
         $test_id = $race_id;
         $test_driver = $result->driver['full_name'];
         $test_pos = $result['position'];
+        
+        // temporarily disabling pole points until post covid weirdness
         $test_pole = ($result['start_position'] == '1') ? 1 : 0;
+
         $test_stage1 = ($result['stage_1_win'] == true) ? 1 : 0;
         $test_stage2 = ($result['stage_2_win'] == true) ? 1 : 0;
         $test_stage3 = ($result['stage_3_win'] == true) ? 1 : 0;
