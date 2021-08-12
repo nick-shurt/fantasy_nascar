@@ -3,10 +3,10 @@
         $url_year = $_GET['year'];
         $num_year = (int)$url_year;
         if($num_year < 2017 || $num_year > 2021) {
-            header("Location: /fantasy_nascar.php?year=2021");
+            header("Location: /test.php?year=2021");
         } 
     } else {
-        header("Location: /fantasy_nascar.php?year=2021");
+        header("Location: /test.php?year=2021");
     }      
 ?>
 <!DOCTYPE html>
@@ -74,6 +74,7 @@
             <li><a data-toggle="tab" href="#tab2">Schedule/Results</a></li>
             <li><a data-toggle="tab" href="#tab3">Standings</a></li>
             <li><a data-toggle="tab" href="#tab4">Teams</a></li>
+			<li><a data-toggle="tab" href="#tab5">All-Time Stats</a></li>
           </ul>
         </div>
       </div>
@@ -263,6 +264,50 @@
                 <div class="row">
                     <?php get_team_rosters(8, 10, $team_roster, $driver_rank, true); ?>                      
                 </div>
+            </div>
+
+			<div id="tab5" class="tab-pane fade">
+                <div class="row top_margin">
+                    <div class="standings col-lg-4">
+                        <h3 style="color: #fff;text-align: center;">Standings</h3>
+                        <table class="table" style="color: #fff; border: 3px solid #fff; background-color: #194775;">
+                            <thead>
+                                <tr>                                        
+                                    <th width="50%" style="border-right: 1px solid white">Team</th>
+                                    <th width="10%" style="border-right: 1px solid white">W</th>
+                                    <th width="10%" style="border-right: 1px solid white">L</th>
+                                    <th width="10%" style="border-right: 1px solid white">Points</th>
+                                    <th width="10%" style="border-right: 1px solid white">Strk</th>
+                                    <th width="10%" style="border-right: 1px solid white">PA</th>                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php get_team_standings($team_standings); ?>                                                 
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="fantasy_pts_leaderboard col-lg-4 col-lg-offset-1">
+                        <h3 style="color: #fff;text-align: center;">Fantasy Points Leaderboard</h3>
+                        <div style="height:500px; overflow-y: scroll; margin-bottom: 40px;border: 2px solid #fff;">
+                            <table class="table" style="color: #fff; border: 3px solid #fff; background-color: #194775;margin-bottom: 0px;">
+                                <thead>
+                                    <tr>
+                                        <th width="2%" style="border-right: 1px solid white">Rank</th>                                        
+                                        <th width="56%" style="border-right: 1px solid white">Driver</th>
+                                        <th width="20%" style="border-right: 1px solid white">Points</th>
+                                        <th width="20%" style="border-right: 1px solid white">Avg per Start</th>
+                                        <th width="2%">Starts</th>                     
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <?php $driver_rank = get_driver_standings($season_drivers, $_GET['year']); ?>
+                                </tbody>
+                            </table>
+                        </div>          
+                    </div>               
+                </div>  
             </div>
         </div>   
     </div>    
