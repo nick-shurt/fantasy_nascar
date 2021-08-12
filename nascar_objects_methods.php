@@ -777,6 +777,28 @@ function sort_total_fantasy_pts($a,$b) {
     }
 }
 
+function get_all_time_standings($team_standings) {
+	
+    $j = 0;
+    while ($j < 10) {
+
+        echo '<tr><td style="border-right: 1px solid white">';                                       
+        echo $team_standings[$j]->get_team_standing()->get_team_name();
+        echo '</td><td style="border-right: 1px solid white">';
+        echo $team_standings[$j]->get_team_standing()->get_wins();
+        echo '</td><td style="border-right: 1px solid white">';
+        echo $team_standings[$j]->get_team_standing()->get_losses();
+        echo '</td><td style="border-right: 1px solid white">';
+        echo $team_standings[$j]->get_team_standing()->get_total_pts();
+        echo '</td><td style="border-right: 1px solid white">';
+        echo $team_standings[$j]->get_team_standing()->get_streak();
+        echo '</td><td style="border-right: 1px solid white">';
+        echo $team_standings[$j]->get_team_standing()->get_total_pts_against();
+        echo '</td></tr>';
+
+        $j++;
+    }
+}
 
 function get_team_standings($team_standings) {
     usort($team_standings, "sort_standings");
