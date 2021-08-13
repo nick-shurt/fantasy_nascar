@@ -800,7 +800,7 @@ function get_all_time_standings($team_standings, $U_Name, $P_Word, $db) {
 
 		$team_name = $result_array[0];
 		$wins = $result_array[1] + $team_standing->get_team_standing()->get_wins();
-		$losses = $result_array[2] + $team_standing->get_team_standing()->losses();
+		$losses = $result_array[2] + $team_standing->get_team_standing()->get_losses();
 		$points = $result_array[3] + $team_standing->get_team_standing()->get_total_pts();
 		$pts_against = $result_array[4] + $team_standing->get_team_standing()->get_total_pts_against();
 
