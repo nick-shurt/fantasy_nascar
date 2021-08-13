@@ -269,7 +269,7 @@
 			<div id="tab5" class="tab-pane fade">
                 <div class="row top_margin">
                     <div class="standings col-lg-4">
-                        <h3 style="color: #fff;text-align: center;">All-Time Stats</h3>
+                        <h3 style="color: #fff;text-align: center;">All-Time Stats (Regular Season)*</h3>
                         <table class="table" style="color: #fff; border: 3px solid #fff; background-color: #194775;">
                             <thead>
                                 <tr>                                        
@@ -285,6 +285,7 @@
                                 <?php get_all_time_standings($team_standings, $U_NAME, $P_WORD, $DATABASE); ?>                                                 
                             </tbody>
                         </table>
+						<p style="color:silver;text-align:right;">*Website Era</p>
                     </div>
 
                     <div class="fantasy_pts_leaderboard col-lg-4 col-lg-offset-1">
