@@ -1,7 +1,5 @@
 <?php
 
-include 'db_credentials.php';
-
 /* CLASSES */
 class Team_Standing {
 
@@ -779,11 +777,10 @@ function sort_total_fantasy_pts($a,$b) {
     }
 }
 
-function get_all_time_standings($team_standings) {
+function get_all_time_standings($team_standings, $U_Name, $P_Word, $db) {
 	$servername = "localhost";
-	$username = $U_NAME;
-	$password = $P_WORD;
-	$db = $DATABASE;
+	$username = $U_Name;
+	$password = $P_Word;
 
 	$con = new mysqli($servername, $username, $password);
 	if ($con->connect_error) {

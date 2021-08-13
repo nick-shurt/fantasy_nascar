@@ -282,7 +282,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php get_all_time_standings($team_standings); ?>                                                 
+                                <?php get_all_time_standings($team_standings, $U_NAME, $P_WORD, $DATABASE); ?>                                                 
                             </tbody>
                         </table>
                     </div>
