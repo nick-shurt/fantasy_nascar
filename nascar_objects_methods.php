@@ -1,5 +1,7 @@
 <?php
 
+include 'db_credentials.php';
+
 /* CLASSES */
 class Team_Standing {
 
@@ -778,6 +780,20 @@ function sort_total_fantasy_pts($a,$b) {
 }
 
 function get_all_time_standings($team_standings) {
+	$servername = "localhost";
+	$username = $U_NAME;
+	$password = $P_WORD;
+	$db = $DATABASE;
+
+	$con = new mysqli($servername, $username, $password);
+	if ($con->connect_error) {
+		die("Connection failed: " . $con->connect_error);
+	}
+	if (!mysqli_select_db($con, $db))  {  
+		echo "Unable to locate the database";   
+		exit();  
+	}
+
 	$all_time_stats = array();
 
 	foreach ($team_standings as $team_standing) {
