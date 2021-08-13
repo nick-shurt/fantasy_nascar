@@ -273,12 +273,12 @@
                         <table class="table" style="color: #fff; border: 3px solid #fff; background-color: #194775;">
                             <thead>
                                 <tr>                                        
-                                    <th width="50%" style="border-right: 1px solid white">Team</th>
+                                    <th width="36%" style="border-right: 1px solid white">Team</th>
                                     <th width="10%" style="border-right: 1px solid white">W</th>
                                     <th width="10%" style="border-right: 1px solid white">L</th>
-									<th width="10%" style="border-right: 1px solid white">Winning %</th>
-                                    <th width="10%" style="border-right: 1px solid white">Points</th>
-                                    <th width="10%" style="border-right: 1px solid white">PA</th>                   
+									<th width="20%" style="border-right: 1px solid white">Winning %</th>
+                                    <th width="12%" style="border-right: 1px solid white">Points</th>
+                                    <th width="12%" style="border-right: 1px solid white">PA</th>                   
                                 </tr>
                             </thead>
                             <tbody>
