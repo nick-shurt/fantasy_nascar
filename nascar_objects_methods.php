@@ -810,14 +810,14 @@ function get_all_time_standings($team_standings, $U_Name, $P_Word, $db) {
 	
     $j = 0;
     while ($j < 10) {
-		$winning_pct = ($all_time_stats[$j][0]/($all_time_stats[$j][0] + $all_time_stats[$j][1])) * 100;
+		$winning_pct = ($all_time_stats[$j][1]/($all_time_stats[$j][1] + $all_time_stats[$j][2])) * 100;
 
         echo '<tr><td style="border-right: 1px solid white">';                                       
         echo $all_time_stats[$j][0];
         echo '</td><td style="border-right: 1px solid white">';
         echo $all_time_stats[$j][1];
         echo '</td><td style="border-right: 1px solid white">';
-        echo round($winning_pct, 2);
+        echo round($winning_pct, 2) . "%";
         echo '</td><td style="border-right: 1px solid white">';
         echo $all_time_stats[$j][2];
         echo '</td><td style="border-right: 1px solid white">';
