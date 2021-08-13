@@ -269,7 +269,7 @@
 			<div id="tab5" class="tab-pane fade">
                 <div class="row top_margin">
                     <div class="standings col-lg-4">
-                        <h3 style="color: #fff;text-align: center;">Standings</h3>
+                        <h3 style="color: #fff;text-align: center;">All-Time Stats</h3>
                         <table class="table" style="color: #fff; border: 3px solid #fff; background-color: #194775;">
                             <thead>
                                 <tr>                                        

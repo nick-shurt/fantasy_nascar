@@ -778,22 +778,38 @@ function sort_total_fantasy_pts($a,$b) {
 }
 
 function get_all_time_standings($team_standings) {
+	$all_time_stats = array();
+
+	foreach ($team_standings as $team_standing) {
+        $getStats = "SELECT team_name, wins, losses, points, pts_against FROM all_time_stats WHERE team_name = '".$team_standing->get_team_standing()->get_team_name()."'";
+        $res = mysqli_query($con, $getStats);
+        $result_array = mysqli_fetch_array($res);
+
+		$team_name = $result_array[0];
+		$wins = $result_array[1] + $team_standing->get_team_standing()->get_wins();
+		$losses = $result_array[2] + $team_standing->get_team_standing()->losses();
+		$points = $result_array[3] + $team_standing->get_team_standing()->get_total_pts();
+		$pts_against = $result_array[4] + $team_standing->get_team_standing()->get_total_pts_against();
+
+		$stats_array = array($team_name, $wins, $losses, $points, $pts_against);
+		array_push($all_time_stats, $stats_array);
+    }
 	
     $j = 0;
     while ($j < 10) {
 
         echo '<tr><td style="border-right: 1px solid white">';                                       
-        echo $team_standings[$j]->get_team_standing()->get_team_name();
+        echo $stats_array[$j][0];
         echo '</td><td style="border-right: 1px solid white">';
-        echo $team_standings[$j]->get_team_standing()->get_wins();
+        echo $stats_array[$j][1];
         echo '</td><td style="border-right: 1px solid white">';
-        echo $team_standings[$j]->get_team_standing()->get_losses();
+        echo $stats_array[$j][2];
         echo '</td><td style="border-right: 1px solid white">';
-        echo $team_standings[$j]->get_team_standing()->get_total_pts();
+        echo $stats_array[$j][3];
         echo '</td><td style="border-right: 1px solid white">';
         echo $team_standings[$j]->get_team_standing()->get_streak();
         echo '</td><td style="border-right: 1px solid white">';
-        echo $team_standings[$j]->get_team_standing()->get_total_pts_against();
+        echo $stats_array[$j][4];
         echo '</td></tr>';
 
         $j++;
