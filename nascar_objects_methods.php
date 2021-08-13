@@ -817,9 +817,9 @@ function get_all_time_standings($team_standings, $U_Name, $P_Word, $db) {
         echo '</td><td style="border-right: 1px solid white">';
         echo $all_time_stats[$j][1];
         echo '</td><td style="border-right: 1px solid white">';
-        echo round($winning_pct, 2) . "%";
-        echo '</td><td style="border-right: 1px solid white">';
         echo $all_time_stats[$j][2];
+        echo '</td><td style="border-right: 1px solid white">';
+        echo round($winning_pct, 2) . "%";
         echo '</td><td style="border-right: 1px solid white">';
         echo $all_time_stats[$j][3];
         echo '</td><td style="border-right: 1px solid white">';

@@ -276,7 +276,7 @@
                                     <th width="50%" style="border-right: 1px solid white">Team</th>
                                     <th width="10%" style="border-right: 1px solid white">W</th>
                                     <th width="10%" style="border-right: 1px solid white">L</th>
-									<th width="10%" style="border-right: 1px solid white">Win %</th>
+									<th width="10%" style="border-right: 1px solid white">Winning %</th>
                                     <th width="10%" style="border-right: 1px solid white">Points</th>
                                     <th width="10%" style="border-right: 1px solid white">PA</th>                   
                                 </tr>
