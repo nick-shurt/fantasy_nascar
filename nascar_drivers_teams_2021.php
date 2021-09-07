@@ -156,4 +156,9 @@ $team_standings = array($team_matt,$team_nick,$team_donna,$team_joey,$team_rache
 $team_roster = $team_standings;
 $driver_rank = array();
 
+$team_joey = new Team("#4 Team Joey","Martin Truex Jr","Christopher Bell","Corey Lajoie","John H. Nemechek");
+$team_jru = new Team("#5 Team Jru","Kyle Larson","Chase Briscoe","Ryan Newman","Quin Houff");
+
+$wildcard_teams = array($team_joey, $team_jru);
+
 ?>
