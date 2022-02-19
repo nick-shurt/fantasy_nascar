@@ -165,11 +165,8 @@
                             if($_GET['year'] == '2018' || $_GET['year'] == '2019' || $_GET['year'] == '2020' || $_GET['year'] == '2021') {
                                 echo '<option value="twenty-seven" data-show=".week27">Week 27 (Darlington)</option>';
 								echo '<option value="twenty-eight" data-show=".week28">Wild Card Round (Richmond)</option>';
-                                if($_GET['year'] == '2018' || $_GET['year'] == '2019' || $_GET['year'] == '2020') {
-                                    echo '<option value="twenty-eight" data-show=".week28">Wild Card Round (Richmond)</option>';
-                                    echo '<option value="twenty-nine" data-show=".week29">Semi-Final Round (Weeks 29-32)</option>';
-                                    echo '<option value="thirty" data-show=".week30">Championship (Weeks 33-36)</option>';
-                                }
+								echo '<option value="twenty-nine" data-show=".week29">Semi-Final Round (Weeks 29-32)</option>';
+								echo '<option value="thirty" data-show=".week30">Championship (Weeks 33-36)</option>';
                             }
                             ?>
                             
@@ -191,22 +188,14 @@
                             get_wildcard_matchup($wildcard_teams, 27, true); 
                             get_semifinal_matchups($semifinal_teams, 28, true);
                             get_championship_matchup($championship_teams, 29, true);
-                        } else if ($_GET['year'] == '2018') {
-                            get_wildcard_matchup($wildcard_teams, 28, true);
-                            get_semifinal_matchups($semifinal_teams, 29, true);
-                            get_championship_matchup($championship_teams, 30, true);
-                        } else if ($_GET['year'] == '2019') {
-                            get_wildcard_matchup($wildcard_teams, 28, true);
-                            get_semifinal_matchups($semifinal_teams, 29, true);
-                            get_championship_matchup($championship_teams, 30, true);
-                        } else if ($_GET['year'] == '2020') {
+                        } else if ($_GET['year'] == '2018' || $_GET['year'] == '2019' || $_GET['year'] == '2020') {
                             get_wildcard_matchup($wildcard_teams, 28, true);
                             get_semifinal_matchups($semifinal_teams, 29, true);
                             get_championship_matchup($championship_teams, 30, true);
                         } else if ($_GET['year'] == '2021') {
-                            get_wildcard_matchup($wildcard_teams, 28, false);
-                            //get_semifinal_matchups($semifinal_teams, 29, false);
-                            //get_championship_matchup($championship_teams, 30, false);
+                            get_wildcard_matchup($wildcard_teams, 28, true);
+                            get_semifinal_matchups($semifinal_teams, 29, true);
+                            get_championship_matchup($championship_teams, 30, false);
                         } 
                     ?>
                 </div>
@@ -272,7 +261,7 @@
         </div>   
     </div>    
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/toggle_nascar_scoreboard3.js"></script>
     <script>
@@ -294,7 +283,8 @@
 
     <script>
     $(function() {
-        var optionValue  = "<?php get_current_week(); ?>";
+        //var optionValue  = "<?php get_current_week(); ?>";
+        var optionValue = "thirty";
         $("#theSelect").val(optionValue)
         .find("option[value=" + optionValue +"]").attr('selected', true);
     })
