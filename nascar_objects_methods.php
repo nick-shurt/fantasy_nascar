@@ -1020,11 +1020,11 @@ function get_team_rosters($num, $range, $team_roster, $driver_rank, $is_last) {
 
 
 /* SCHEDULE DETERMINATION */
-$pair1 = array(0,1);
-$pair2 = array(2,3);
-$pair3 = array(4,5);
-$pair4 = array(6,7);
-$pair5 = array(8,9);
+$pair1 = array(8,1);
+$pair2 = array(0,7);
+$pair3 = array(5,2);
+$pair4 = array(6,3);
+$pair5 = array(9,4);
 $wk1_pairs = array($pair1,$pair2,$pair3,$pair4,$pair5);
 
 $pair1 = array(7,3);
@@ -1034,11 +1034,11 @@ $pair4 = array(1,5);
 $pair5 = array(0,2);
 $wk2_pairs = array($pair1,$pair2,$pair3,$pair4,$pair5);
 
-$pair1 = array(8,1);
-$pair2 = array(0,7);
-$pair3 = array(5,2);
-$pair4 = array(6,3);
-$pair5 = array(9,4);
+$pair1 = array(1,7);
+$pair2 = array(8,3);
+$pair3 = array(4,6);
+$pair4 = array(9,2);
+$pair5 = array(5,0);
 $wk3_pairs = array($pair1,$pair2,$pair3,$pair4,$pair5);
 
 $pair1 = array(7,5);
@@ -1062,11 +1062,11 @@ $pair4 = array(2,1);
 $pair5 = array(3,5);
 $wk6_pairs = array($pair1,$pair2,$pair3,$pair4,$pair5);
 
-$pair1 = array(1,7);
-$pair2 = array(8,3);
-$pair3 = array(4,6);
-$pair4 = array(9,2);
-$pair5 = array(5,0);
+$pair1 = array(0,1);
+$pair2 = array(2,3);
+$pair3 = array(4,5);
+$pair4 = array(6,7);
+$pair5 = array(8,9);
 $wk7_pairs = array($pair1,$pair2,$pair3,$pair4,$pair5);
 
 $pair1 = array(0,8);
@@ -1101,12 +1101,12 @@ function show_next_race($U_Name, $P_Word, $db) {
         exit();  
     }
 
-    $getRaces = "SELECT * FROM races_2021 WHERE closed = 0 LIMIT 1";
+    $getRaces = "SELECT * FROM races_2022 WHERE closed = 0 LIMIT 1";
     $res = mysqli_query($con, $getRaces);
     $race_data = mysqli_fetch_array($res);
 
     if (mysqli_num_rows($res) == 0) {
-        $getLastRace = "SELECT * FROM races_2021 WHERE number = 36 LIMIT 1";
+        $getLastRace = "SELECT * FROM races_2022 WHERE number = 36 LIMIT 1";
         $res2 = mysqli_query($con, $getLastRace);
         $race_data = mysqli_fetch_array($res2);
     }
@@ -1142,7 +1142,7 @@ function show_next_race($U_Name, $P_Word, $db) {
 function get_current_week() {
     $f = new NumberFormatter("en", NumberFormatter::SPELLOUT);
 
-    $xml = simplexml_load_file("2021_cup_schedule.xml");
+    $xml = simplexml_load_file("2022_cup_schedule.xml");
     
     $cur_week = "";
     $found = false;
@@ -1200,9 +1200,7 @@ function upload_results($simpleXml, $con) {
         $test_driver = $result->driver['full_name'];
         $test_pos = $result['position'];
         
-        // temporarily disabling pole points until post covid weirdness
-        //$test_pole = ($result['start_position'] == '1') ? 1 : 0;
-        $test_pole = 0;
+        $test_pole = ($result['start_position'] == '1') ? 1 : 0;
 
         $test_stage1 = ($result['stage_1_win'] == true) ? 1 : 0;
         $test_stage2 = ($result['stage_2_win'] == true) ? 1 : 0;
@@ -1215,7 +1213,7 @@ function upload_results($simpleXml, $con) {
     if (mysqli_query($con, $trim_sql)) {
         $msg = "Race results uploaded successfully!<br>";
 
-        $sql2 = "UPDATE races_2021 SET closed = 1 WHERE race_id = '".$race_id."'";
+        $sql2 = "UPDATE races_2022 SET closed = 1 WHERE race_id = '".$race_id."'";
         if (mysqli_query($con, $sql2)) {
             $msg .= "<br>This week's race has been successfully updated to closed!<br>";
         } else {
