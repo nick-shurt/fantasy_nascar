@@ -2,11 +2,11 @@
     if(isset($_GET['year'])) {
         $url_year = $_GET['year'];
         $num_year = (int)$url_year;
-        if($num_year < 2017 || $num_year > 2022) {
-            header("Location: /fantasy_nascar.php?year=2022");
+        if($num_year < 2017 || $num_year > 2023) {
+            header("Location: /fantasy_nascar.php?year=2023");
         } 
     } else {
-        header("Location: /fantasy_nascar.php?year=2022");
+        header("Location: /fantasy_nascar.php?year=2023");
     }      
 ?>
 <!DOCTYPE html>
@@ -87,6 +87,7 @@
             <option value="2020" <?php if($_GET['year'] == '2020') echo "selected='selected'"; ?> >2020</option>
             <option value="2021" <?php if($_GET['year'] == '2021') echo "selected='selected'"; ?> >2021</option>
 			<option value="2022" <?php if($_GET['year'] == '2022') echo "selected='selected'"; ?> >2022</option>
+            <option value="2022" <?php if($_GET['year'] == '2023') echo "selected='selected'"; ?> >2023</option>
         </select>
     </div>
 
@@ -116,6 +117,11 @@
 	if($_GET['year'] == '2022') {
         include 'nascar_drivers_teams_2022.php';
         include 'nascar_results_2022.php';
+    }
+
+    if($_GET['year'] == '2023') {
+        include 'nascar_drivers_teams_2023.php';
+        include 'nascar_results_2023.php';
     }
     ?>
 
@@ -167,17 +173,17 @@
                                 echo '<option value="twenty-eight" data-show=".week28">Semi-Final Round (Weeks 28-31)</option>';
                                 echo '<option value="twenty-nine" data-show=".week29">Championship (Weeks 32-36)</option>';
                             }
-                            if($_GET['year'] == '2018' || $_GET['year'] == '2019' || $_GET['year'] == '2020' || $_GET['year'] == '2021') {
+                            if($_GET['year'] == '2018' || $_GET['year'] == '2019' || $_GET['year'] == '2020' || $_GET['year'] == '2021' || $_GET['year'] == '2022') {
                                 echo '<option value="twenty-seven" data-show=".week27">Week 27 (Darlington)</option>';
 								echo '<option value="twenty-eight" data-show=".week28">Wild Card Round (Richmond)</option>';
 								echo '<option value="twenty-nine" data-show=".week29">Semi-Final Round (Weeks 29-32)</option>';
 								echo '<option value="thirty" data-show=".week30">Championship (Weeks 33-36)</option>';
                             }
-							if($_GET['year'] == '2022') {
+							if($_GET['year'] == '2023') {
                                 echo '<option value="twenty-seven" data-show=".week27">Week 27 (Darlington)</option>';
-								echo '<option value="twenty-eight" data-show=".week28">Wild Card Round (Richmond)</option>';
-								echo '<option value="twenty-nine" data-show=".week29">Semi-Final Round (Weeks 29-32)</option>';
-								echo '<option value="thirty" data-show=".week30">Championship (Weeks 33-36)</option>';
+								//echo '<option value="twenty-eight" data-show=".week28">Wild Card Round (Richmond)</option>';
+								//echo '<option value="twenty-nine" data-show=".week29">Semi-Final Round (Weeks 29-32)</option>';
+								//echo '<option value="thirty" data-show=".week30">Championship (Weeks 33-36)</option>';
                             }
                             ?>
                             
@@ -199,14 +205,14 @@
                             get_wildcard_matchup($wildcard_teams, 27, true); 
                             get_semifinal_matchups($semifinal_teams, 28, true);
                             get_championship_matchup($championship_teams, 29, true);
-                        } else if ($_GET['year'] == '2018' || $_GET['year'] == '2019' || $_GET['year'] == '2020' || $_GET['year'] == '2021') {
+                        } else if ($_GET['year'] == '2018' || $_GET['year'] == '2019' || $_GET['year'] == '2020' || $_GET['year'] == '2021' || $_GET['year'] == '2022') {
                             get_wildcard_matchup($wildcard_teams, 28, true);
                             get_semifinal_matchups($semifinal_teams, 29, true);
                             get_championship_matchup($championship_teams, 30, true);
-                        } else if ($_GET['year'] == '2022') {
-                            get_wildcard_matchup($wildcard_teams, 28, true);
-                            get_semifinal_matchups($semifinal_teams, 29, true);
-                            get_championship_matchup($championship_teams, 30, true);
+                        } else if ($_GET['year'] == '2023') {
+                            //get_wildcard_matchup($wildcard_teams, 28, false);
+                            //get_semifinal_matchups($semifinal_teams, 29, false);
+                            //get_championship_matchup($championship_teams, 30, false);
                         } 
                     ?>
                 </div>
@@ -294,8 +300,8 @@
 
     <script>
     $(function() {
-        //var optionValue  = "<?php get_current_week(); ?>";
-        var optionValue = "thirty";
+        var optionValue  = "<?php get_current_week(); ?>";
+        //var optionValue = "thirty";
         $("#theSelect").val(optionValue)
         .find("option[value=" + optionValue +"]").attr('selected', true);
     })
