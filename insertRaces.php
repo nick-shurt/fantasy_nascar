@@ -19,16 +19,13 @@ if (!mysqli_select_db($con, $db))  {
     exit();  
 }
 
-$xml=simplexml_load_file("2022_cup_schedule.xml");
+$xml=simplexml_load_file("2023_cup_schedule.xml");
 
 $k = 1;
 $error = false;
 foreach ($xml->season->event as $event) {
     foreach ($event->race as $race) {
         if (isset($race["number"])) {
-            //echo $k . ". " . $race["name"];
-            //echo "<br>";
-            //$k++;
             $race_id = $race["id"];
             $track = $event->track["name"];
             $name = $race["name"];
@@ -41,7 +38,7 @@ foreach ($xml->season->event as $event) {
             $closed = 0;
 
 
-            $sql = "INSERT INTO races_2021 (race_id, track, name, date, laps, distance, broadcast, prev_winner, number, closed) VALUES ";
+            $sql = "INSERT INTO races_2023 (race_id, track, name, date, laps, distance, broadcast, prev_winner, number, closed) VALUES ";
             $sql .= "('" . $race_id . "', '" . $track . "', '" . $name . "', '" . $date . "', '" . $laps . "', '" . $distance . "', '" . $broadcast . "', '" . $prev_winner . "', '" . $number . "', '" . $closed . "')";
 
             if (mysqli_query($con, $sql)) {

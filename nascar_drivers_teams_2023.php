@@ -27,7 +27,6 @@ $denny_hamlin = new Season_Driver("Denny Hamlin");
 $chris_buescher = new Season_Driver("Chris Buescher");
 $alex_bowman = new Season_Driver("Alex Bowman");
 $martin_truex = new Season_Driver("Martin Truex Jr");
-$ryan_newman = new Season_Driver("Ryan Newman");
 $brad_keselowski = new Season_Driver("Brad Keselowski");
 $erik_jones = new Season_Driver("Erik Jones");
 $corey_lajoie = new Season_Driver("Corey Lajoie");
@@ -41,28 +40,28 @@ $bubba_wallace = new Season_Driver("Bubba Wallace");
 $william_byron = new Season_Driver("William Byron");
 $ryan_preece = new Season_Driver("Ryan Preece");
 $tyler_reddick = new Season_Driver("Tyler Reddick");
-$cole_custer = new Season_Driver("Cole Custer");
-$quin_houff = new Season_Driver("Quin Houff");
-$joey_gase = new Season_Driver("Joey Gase");
-$timmy_hill = new Season_Driver("Timmy Hill");
 $christopher_bell = new Season_Driver("Christopher Bell");
 $ross_chastain = new Season_Driver("Ross Chastain");
 $bj_mcleod = new Season_Driver("BJ McLeod");
 $justin_haley = new Season_Driver("Justin Haley");
-$david_ragan = new Season_Driver("David Ragan");
-$garrett_smithley = new Season_Driver("Garrett Smithley");
-$kaz_grala = new Season_Driver("Kaz Grala");
 $austin_cindric = new Season_Driver("Austin Cindric");
-$josh_bilicki = new Season_Driver("Josh Bilicki");
 $chase_briscoe = new Season_Driver("Chase Briscoe");
 $cody_ware = new Season_Driver("Cody Ware");
 $noah_gragson = new Season_Driver("Noah Gragson");
 $aj_allmendinger = new Season_Driver("AJ Allmendinger");
-$greg_biffle = new Season_Driver("Greg Biffle");
 $harrison_burton = new Season_Driver("Harrison Burton");
 $todd_gilliland = new Season_Driver("Todd Gilliland");
-$daniel_hemric = new Season_Driver("Daniel Hemric");
-$jacques_villeneuve = new Season_Driver("Jacques Villeneuve");
+$jj_yeley = new Season_Driver("J.J. Yeley");
+$riley_herbst = new Season_Driver("Riley Herbst");
+$zane_smith = new Season_Driver("Zane Smith");
+$ty_gibbs = new Season_Driver("Ty Gibbs");
+$josh_bilicki = new Season_Driver("Josh Bilicki");
+$chandler_smith = new Season_Driver("Chandler Smith");
+$jimmie_johnson = new Season_Driver("Jimmie Johnson");
+$travis_pastrana = new Season_Driver("Travis Pastrana");
+$austin_hill = new Season_Driver("Austin Hill");
+$conor_daly = new Season_Driver("Conor Daly");
+
 
 $season_drivers = array($tyler_reddick,
                         $michael_mcdowell,
@@ -76,7 +75,6 @@ $season_drivers = array($tyler_reddick,
                         $chris_buescher,
                         $alex_bowman,
                         $martin_truex,
-                        $ryan_newman,
                         $brad_keselowski,
                         $erik_jones,
                         $corey_lajoie,
@@ -89,29 +87,40 @@ $season_drivers = array($tyler_reddick,
                         $bubba_wallace,
                         $william_byron,
                         $ryan_preece,
-                        $cole_custer,
-                        $quin_houff,
-                        $joey_gase,
-                        $timmy_hill,
                         $christopher_bell,
                         $ross_chastain,
                         $bj_mcleod,
                         $justin_haley,
-                        $david_ragan,
-                        $garrett_smithley,
-                        $kaz_grala,
                         $austin_cindric,
-                        $josh_bilicki,
                         $chase_briscoe,
                         $cody_ware,
                         $noah_gragson,
                         $aj_allmendinger,
-						$greg_biffle,
 						$harrison_burton,
 						$todd_gilliland,
-						$daniel_hemric,
-						$jacques_villeneuve);
+                        $jj_yeley,
+                        $riley_herbst,
+                        $zane_smith,
+                        $ty_gibbs,
+                        $josh_bilicki,
+                        $chandler_smith,
+                        $jimmie_johnson,
+                        $travis_pastrana,
+                        $austin_hill,
+                        $conor_daly);
 
+$team_mike = new Team("Team Mike","Kyle Larson","Aric Almirola","Justin Haley","Jimmie Johnson");
+$team_chives = new Team("Team Chives","Alex Bowman","William Byron","Harrison Burton","Matt DiBenedetto");
+$team_docks = new Team("Team Docks","Kevin Harvick","Martin Truex Jr","Cody Ware","Dale Earnhardt Jr");
+$team_jim = new Team("Team Jim","Christopher Bell","Kyle Busch","AJ Allmendinger","BJ McLeod");
+$team_joey = new Team("Team Joey","Ryan Blaney","Ryan Preece","Chris Buescher","Ricky Stenhouse Jr");
+$team_matt = new Team("Team Matt","Chase Briscoe","Daniel Suarez","Erik Jones","Kasey Kahne");
+$team_jru = new Team("Team Jru","Joey Logano","Austin Dillon","Noah Gragson","Greg Biffle");
+$team_rachel = new Team("Team Rachel","Denny Hamlin","Tyler Reddick","Ty Gibbs","Todd Gilliland");
+$team_nick = new Team("Team Nick","Ross Chastain","Bubba Wallace","Brad Keselowski","Corey Lajoie");
+$team_donna = new Team("Team Donna","Chase Elliott","Austin Cindric","Michael McDowell","Ty Dillon");
+
+$week_1_teams = array($team_mike,$team_chives,$team_docks,$team_jim,$team_joey,$team_matt,$team_jru,$team_rachel,$team_nick,$team_donna);
 
 $team_names = array();
 $drivers1 = array();
@@ -119,7 +128,7 @@ $drivers2 = array();
 $drivers3 = array();
 $drivers4 = array();
 
-$getRaceData = "SELECT * FROM teams_2022";
+$getRaceData = "SELECT * FROM teams_2023";
 $res = mysqli_query($con, $getRaceData);
 
 while ($row = mysqli_fetch_array($res)) {
@@ -157,22 +166,5 @@ $team_docks = new Team($team_names[269],$drivers1[269],$drivers2[269],$drivers3[
 $team_standings = array($team_matt,$team_nick,$team_donna,$team_joey,$team_rachel,$team_chives,$team_jim,$team_mike,$team_jru,$team_docks);
 $team_roster = $team_standings;
 $driver_rank = array();
-
-$team_nick = new Team("#4 Team Nick","Tyler Reddick","Austin Dillon","Chris Buescher","Corey Lajoie");
-$team_mike = new Team("#5 Team Mike","Kyle Larson","Cole Custer","Michael McDowell","Garrett Smithley");
-
-$wildcard_teams = array($team_nick, $team_mike);
-
-$team_donna = new Team("#1 Team Donna","Chase Elliott","Christopher Bell","Justin Haley","Todd Gilliland");
-$team_mike = new Team("#4 Team Mike","Kyle Larson","Cole Custer","Michael McDowell","Garrett Smithley");
-$team_rachel = new Team("#2 Team Rachel","Kevin Harvick","Aric Almirola","Chase Briscoe","Josh Biliki");
-$team_matt = new Team("#3 Team Matt","William Byron","Alex Bowman","Erik Jones","Noah Gragson");
-
-$semifinal_teams = array($team_donna, $team_mike, $team_rachel, $team_matt);
-
-$team_donna = new Team("#1 Team Donna","Chase Elliott","Christopher Bell","Justin Haley","Todd Gilliland");
-$team_rachel = new Team("#2 Team Rachel","Kevin Harvick","Aric Almirola","Chase Briscoe","Josh Biliki");
-
-$championship_teams = array($team_donna, $team_rachel);
 
 ?>
