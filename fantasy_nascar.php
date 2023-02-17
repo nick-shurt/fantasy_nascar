@@ -198,16 +198,18 @@
                         $w = ($_GET['year'] == '2017') ? 26 : 27;
                         while ($i <= $w) {
                             $j = ($i - 1) % 9;
-                            if ($i == 10) {
-                                $j = 1;
-                            }
-                            if ($i == 11) {
-                                $j = 0;
-                            }              
+                            if ($_GET['year'] == '2023') {
+                                if ($i == 10) {
+                                    $j = 1;
+                                }
+                                if ($i == 11) {
+                                    $j = 0;
+                                } 
+                            }          
                             get_matchups($teams_week, $i, $num_pairs[$j], $team_standings);
                             $i++;
                         }
-                        if($_GET['year'] == '2017') {
+                        if ($_GET['year'] == '2017') {
                             get_wildcard_matchup($wildcard_teams, 27, true); 
                             get_semifinal_matchups($semifinal_teams, 28, true);
                             get_championship_matchup($championship_teams, 29, true);
