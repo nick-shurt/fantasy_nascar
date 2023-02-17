@@ -197,7 +197,13 @@
                         $i = 1;
                         $w = ($_GET['year'] == '2017') ? 26 : 27;
                         while ($i <= $w) {
-                            $j = ($i - 1) % 9;                       
+                            $j = ($i - 1) % 9;
+                            if ($i == 10) {
+                                $j = 1;
+                            }
+                            if ($i == 11) {
+                                $j = 0;
+                            }              
                             get_matchups($teams_week, $i, $num_pairs[$j], $team_standings);
                             $i++;
                         }

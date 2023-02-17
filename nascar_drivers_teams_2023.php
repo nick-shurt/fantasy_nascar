@@ -108,19 +108,7 @@ $season_drivers = array($tyler_reddick,
                         $travis_pastrana,
                         $austin_hill,
                         $conor_daly);
-
-$team_mike = new Team("Team Mike","Kyle Larson","Aric Almirola","Justin Haley","Jimmie Johnson");
-$team_chives = new Team("Team Chives","Alex Bowman","William Byron","Harrison Burton","Matt DiBenedetto");
-$team_docks = new Team("Team Docks","Kevin Harvick","Martin Truex Jr","Cody Ware","Dale Earnhardt Jr");
-$team_jim = new Team("Team Jim","Christopher Bell","Kyle Busch","AJ Allmendinger","BJ McLeod");
-$team_joey = new Team("Team Joey","Ryan Blaney","Ryan Preece","Chris Buescher","Ricky Stenhouse Jr");
-$team_matt = new Team("Team Matt","Chase Briscoe","Daniel Suarez","Erik Jones","Kasey Kahne");
-$team_jru = new Team("Team Jru","Joey Logano","Austin Dillon","Noah Gragson","Greg Biffle");
-$team_rachel = new Team("Team Rachel","Denny Hamlin","Tyler Reddick","Ty Gibbs","Todd Gilliland");
-$team_nick = new Team("Team Nick","Ross Chastain","Bubba Wallace","Brad Keselowski","Corey Lajoie");
-$team_donna = new Team("Team Donna","Chase Elliott","Austin Cindric","Michael McDowell","Ty Dillon");
-
-$week_1_teams = array($team_mike,$team_chives,$team_docks,$team_jim,$team_joey,$team_matt,$team_jru,$team_rachel,$team_nick,$team_donna);
+                        
 
 $team_names = array();
 $drivers1 = array();
